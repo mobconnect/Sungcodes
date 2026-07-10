@@ -1,0 +1,170 @@
+import React, { useState } from "react";
+
+export default function ThreeAM() {
+  const [lyrics] = useState([
+    "The night feels cold and heavy.",
+    "Worry hangs in the air.",
+    "Fear shows up in quiet moments.",
+    "The rain feels like a backdrop for the mood.",
+    "Loneliness becomes impossible to ignore."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+3am
+import React, { useState } from "react";
+
+export default function ThreeAM() {
+  const [lyrics] = useState([
+    "The night feels cold and heavy.",
+    "Worry hangs in the air.",
+    "Fear shows up in quiet moments.",
+    "The rain feels like a backdrop for the mood.",
+    "Loneliness becomes impossible to ignore."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Push
+import React, { useState } from "react";
+
+export default function Push() {
+  const [lyrics] = useState([
+    "The relationship feels tense and unstable.",
+    "Words become a weapon.",
+    "Control keeps surfacing.",
+    "The mood is sharp and confrontational.",
+    "Everything feels emotionally loaded."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Unwell
+import React, { useState } from "react";
+
+export default function Unwell() {
+  const [lyrics] = useState([
+    "The mind feels crowded and restless.",
+    "Small moments start to feel strange.",
+    "The narrator knows something is off.",
+    "Isolation makes everything louder.",
+    "The mood is vulnerable but self-aware."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+const songs = {
+  threeAM: [
+    "The night feels cold and heavy.",
+    "Worry hangs in the air.",
+    "Fear shows up in quiet moments.",
+    "The rain feels like a backdrop for the mood.",
+    "Loneliness becomes impossible to ignore."
+  ],
+  push: [
+    "The relationship feels tense and unstable.",
+    "Words become a weapon.",
+    "Control keeps surfacing.",
+    "The mood is sharp and confrontational.",
+    "Everything feels emotionally loaded."
+  ],
+  unwell: [
+    "The mind feels crowded and restless.",
+    "Small moments start to feel strange.",
+    "The narrator knows something is off.",
+    "Isolation makes everything louder.",
+    "The mood is vulnerable but self-aware."
+  ]
+};
+
+Bent
+import React, { useState } from "react";
+
+export default function Bent() {
+  const [lyrics] = useState([
+    "The relationship feels fragile.",
+    "The narrator wants help putting things back together.",
+    "Pain and dependence show up together.",
+    "The mood is tense and vulnerable.",
+    "Everything feels a little broken."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+If your gone
+import React, { useState } from "react";
+
+export default function IfYoureGone() {
+  const [lyrics] = useState([
+    "The fear of losing someone is growing.",
+    "The relationship feels uncertain.",
+    "There is hesitation mixed with need.",
+    "The mood is emotional and open.",
+    "Distance changes everything."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Bright lights
+import React, { useState } from "react";
+
+export default function BrightLights() {
+  const [lyrics] = useState([
+    "A person leaves home for something bigger.",
+    "The city feels exciting but risky.",
+    "Success and pressure go hand in hand.",
+    "The narrator hopes they return safely.",
+    "The mood is wistful and supportive."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
