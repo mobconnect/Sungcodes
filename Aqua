@@ -1,0 +1,110 @@
+Barbie Girl
+import React, { useState } from "react";
+
+export default function BarbieGirl() {
+  const [lines] = useState([
+    "The vibe is bright and playful.",
+    "The mood is colorful and bubbly.",
+    "The song feels like pure pop fun.",
+    "The hook is instantly recognizable.",
+    "The energy stays high."
+  ]);
+
+  return <div>{lines.map((line, i) => <p key={i}>{line}</p>)}</div>;
+}
+
+Turn back time
+import React, { useState } from "react";
+
+export default function TurnBackTime() {
+  const [lines] = useState([
+    "The mood is reflective and regretful.",
+    "The song asks for another chance.",
+    "The feeling is serious and emotional.",
+    "The tone is softer than the pop hits.",
+    "The longing carries the track."
+  ]);
+
+  return <div>{lines.map((line, i) => <p key={i}>{line}</p>)}</div>;
+}
+
+MyohMy
+import React, { useState } from "react";
+
+export default function MyOhMy() {
+  const [lines] = useState([
+    "The song is cheerful and dramatic.",
+    "The energy feels playful and loud.",
+    "The hook is built to stick.",
+    "The mood is classic pop.",
+    "The track sounds made for singing along."
+  ]);
+
+  return <div>{lines.map((line, i) => <p key={i}>{line}</p>)}</div>;
+}
+
+Doctor jones
+import React, { useState } from "react";
+
+export default function DoctorJones() {
+  const [lines] = useState([
+    "The vibe is adventurous and upbeat.",
+    "The song feels fast and fun.",
+    "The mood is cartoonish and light.",
+    "The rhythm keeps moving.",
+    "The track has a playful charm."
+  ]);
+
+  return <div>{lines.map((line, i) => <p key={i}>{line}</p>)}</div>;
+}
+
+Barbie Girl
+import React, { useState } from "react";
+import styled from "styled-components";
+
+const Card = styled.div`
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff7ac8, #8b5cf6);
+  color: white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+`;
+
+const Title = styled.h2`
+  margin: 0 0 16px;
+  font-size: 28px;
+  text-align: center;
+`;
+
+const Line = styled.p`
+  margin: 10px 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  font-size: 16px;
+  line-height: 1.5;
+`;
+
+export default function BarbieGirlChorus() {
+  const [lines] = useState([
+    "The world is shiny and artificial.",
+    "The vibe is playful and exaggerated.",
+    "Everything feels like a pop fantasy.",
+    "The hook celebrates having fun.",
+    "The chorus keeps inviting the party."
+  ]);
+
+  return (
+    <Card>
+      <Title>Barbie Girl Chorus</Title>
+      {lines.map((line, index) => (
+        <Line key={index}>{line}</Line>
+      ))}
+    </Card>
+  );
+}
+
