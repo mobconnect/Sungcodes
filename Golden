@@ -1,0 +1,424 @@
+function golden() {
+  let state = {
+    hidden: true,
+    shining: false,
+    fear: true,
+    truth: false,
+    together: false
+  };
+
+  const journey = [
+    "was alone",
+    "found a voice",
+    "stopped hiding",
+    "started shining",
+    "became golden"
+  ];
+
+  for (let step of journey) {
+    if (step === "was alone") state.hidden = true;
+    if (step === "found a voice") state.fear = false;
+    if (step === "stopped hiding") state.truth = true;
+    if (step === "started shining") state.shining = true;
+    if (step === "became golden") state.together = true;
+  }
+
+  if (state.truth && state.shining) {
+    return "We're going up, up, up — gonna be golden.";
+  }
+
+  return "Still finding the light.";
+}
+
+console.log(golden());
+
+function goldenScript() {
+  let hidden = true;
+  let shining = false;
+  let fear = true;
+
+  console.log("Verse: I was alone, waiting to find myself.");
+  console.log("Pre-Chorus: I stopped hiding and started believing.");
+  console.log("Chorus: We rise together, glowing and strong.");
+
+  hidden = false;
+  fear = false;
+  shining = true;
+
+  if (shining) {
+    console.log("Outro: born to be golden.");
+  }
+}
+
+goldenScript();
+
+python
+def golden_script():
+    hidden = True
+    shining = False
+    fear = True
+
+    print("Verse 1: I was alone and searching.")
+    print("Pre-Chorus: I found the courage to believe.")
+    print("Chorus: We rise together, brighter than before.")
+    print("Verse 2: The past is behind me now.")
+    print("Bridge: No more hiding, no more doubt.")
+
+    hidden = False
+    fear = False
+    shining = True
+
+    if shining:
+        print("Final Chorus: born to be golden.")
+
+golden_script()
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Golden Script</title>
+  <style>
+    body {
+      background: #111;
+      color: #ffd966;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .verse { margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Golden</h1>
+  <div class="verse">Verse 1: I was alone and searching.</div>
+  <div class="verse">Pre-Chorus: I found the courage to believe.</div>
+  <div class="verse">Chorus: We rise together, brighter than before.</div>
+  <div class="verse">Verse 2: The past is behind me now.</div>
+  <div class="verse">Bridge: No more hiding, no more doubt.</div>
+  <div class="verse">Final Chorus: born to be golden.</div>
+</body>
+</html>
+
+scratch style blocks
+when green flag clicked
+say [Verse 1: I was alone and searching.] for 2 seconds
+say [Pre-Chorus: I found the courage to believe.] for 2 seconds
+say [Chorus: We rise together, brighter than before.] for 2 seconds
+say [Verse 2: The past is behind me now.] for 2 seconds
+say [Bridge: No more hiding, no more doubt.] for 2 seconds
+say [Final Chorus: born to be golden.] for 2 seconds
+
+Roblox lua
+local lines = {
+    "Verse 1: I was alone and searching.",
+    "Pre-Chorus: I found the courage to believe.",
+    "Chorus: We rise together, brighter than before.",
+    "Verse 2: The past is behind me now.",
+    "Bridge: No more hiding, no more doubt.",
+    "Final Chorus: born to be golden."
+}
+
+for _, line in ipairs(lines) do
+    print(line)
+end
+
+script
+[Intro]
+The silence before the rise.
+
+[Verse 1]
+I was lost in the dark,
+trying to find my way,
+carrying doubt like a shadow,
+waiting for a brighter day.
+
+[Pre-Chorus]
+Then something changed,
+a spark, a breath, a sound,
+I stopped hiding from myself,
+and stood my ground.
+
+[Chorus]
+We’re going up, up, up,
+this is our moment,
+shining side by side,
+stronger when we own it.
+We’ll be bold, be bright,
+unstoppable tonight,
+we were born to rise,
+we were born to shine.
+
+[Verse 2]
+The past can’t hold me now,
+the fear is fading fast,
+I’m stepping into who I am,
+and leaving pain in the past.
+
+[Bridge]
+No more masks,
+no more lies,
+this is where the real me lives,
+this is where the fire lies.
+
+[Final Chorus]
+We’re going up, up, up,
+this is our moment,
+together we’re glowing,
+the world will know it.
+We’ll be bold, be bright,
+unstoppable tonight,
+we were born to rise,
+we were born to shine.
+
+[Outro]
+Born to be golden.
+
+singalong layout
+[Verse 1]
+I was lost in the dark,
+trying to find my way,
+carrying doubt like a shadow,
+waiting for a brighter day.
+
+[Pre-Chorus]
+Then something changed,
+a spark, a breath, a sound,
+I stopped hiding from myself,
+and stood my ground.
+
+[Chorus]
+We’re going up, up, up,
+this is our moment,
+shining side by side,
+stronger when we own it.
+We’ll be bold, be bright,
+unstoppable tonight,
+we were born to rise,
+we were born to shine.
+
+[Verse 2]
+The past can’t hold me now,
+the fear is fading fast,
+I’m stepping into who I am,
+and leaving pain in the past.
+
+[Bridge]
+No more masks,
+no more lies,
+this is where the real me lives,
+this is where the fire lies.
+
+[Final Chorus]
+We’re going up, up, up,
+this is our moment,
+together we’re glowing,
+the world will know it.
+We’ll be bold, be bright,
+unstoppable tonight,
+we were born to rise,
+we were born to shine.
+
+[Outro]
+Born to be golden.
+
+kareoke style
+[Intro]
+The silence before the rise.
+
+[Verse 1]
+I was lost in the dark,
+trying to find my way,
+
+[Pre-Chorus]
+Then something changed,
+a spark, a breath, a sound,
+
+[Chorus]
+We’re going up, up, up,
+this is our moment,
+
+[Verse 2]
+The past can’t hold me now,
+the fear is fading fast,
+
+[Bridge]
+No more masks,
+no more lies,
+
+[Final Chorus]
+We’re going up, up, up,
+this is our moment,
+
+[Outro]
+Born to be golden.
+
+music video storyboard
+Scene 1:
+A quiet city at night. One character stands alone under a dim light.
+
+Scene 2:
+Quick flashes of doubt, pressure, and hidden identity.
+
+Scene 3:
+The beat builds. The character looks up and starts moving forward.
+
+Scene 4:
+The group joins together on a stage surrounded by bright golden light.
+
+Scene 5:
+Fast cuts of confidence, choreography, and dramatic close-ups.
+
+Scene 6:
+The bridge slows down. The characters remove symbolic masks.
+
+Scene 7:
+Final chorus. They perform together with full energy and glowing visuals.
+
+Scene 8:
+End shot with the group standing tall against a sunrise or golden sky.
+
+java script app
+const lyrics = [
+  "[Verse 1] I was lost in the dark, trying to find my way.",
+  "[Pre-Chorus] Then something changed, and I stood my ground.",
+  "[Chorus] We’re going up, up, up — this is our moment.",
+  "[Verse 2] The past can’t hold me now.",
+  "[Bridge] No more masks, no more lies.",
+  "[Final Chorus] We were born to rise, we were born to shine.",
+  "[Outro] Born to be golden."
+];
+
+let i = 0;
+
+function showNextLine() {
+  if (i < lyrics.length) {
+    console.log(lyrics[i]);
+    i++;
+  }
+}
+
+setInterval(showNextLine, 2000);
+
+ccs frame work
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scrolling Lyric Animation</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .wrapper {
+      width: 90vw;
+      max-width: 600px;
+    }
+
+    .controls {
+      margin-bottom: 12px;
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background: #ffd966;
+      color: #111;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .scroll-box {
+      height: 60vh;
+      overflow: hidden;
+      border: 2px solid #ffd966;
+      border-radius: 12px;
+      background: #000;
+      position: relative;
+    }
+
+    .lyrics {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 24px;
+      line-height: 1.8;
+      font-size: 1.2rem;
+      text-align: center;
+      animation: scrollUp 30s linear infinite;
+    }
+
+    .paused {
+      animation-play-state: paused;
+    }
+
+    @keyframes scrollUp {
+      from { transform: translateY(0); }
+      to { transform: translateY(-180%); }
+    }
+
+    .line {
+      margin: 18px 0;
+    }
+
+    .highlight {
+      color: #ffd966;
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="controls">
+      <button onclick="togglePlay()">Play / Pause</button>
+      <button onclick="restartScroll()">Restart</button>
+    </div>
+
+    <div class="scroll-box">
+      <div id="lyrics" class="lyrics">
+        <div class="line">[Verse 1] I was lost in the dark, trying to find my way.</div>
+        <div class="line">[Pre-Chorus] Then something changed, and I stood my ground.</div>
+        <div class="line highlight">[Chorus] We’re going up, up, up — this is our moment.</div>
+        <div class="line">[Verse 2] The past can’t hold me now.</div>
+        <div class="line">[Bridge] No more masks, no more lies.</div>
+        <div class="line highlight">[Final Chorus] We were born to rise, we were born to shine.</div>
+        <div class="line">[Outro] Born to be golden.</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const lyrics = document.getElementById("lyrics");
+    let isPaused = false;
+
+    function togglePlay() {
+      isPaused = !isPaused;
+      lyrics.classList.toggle("paused", isPaused);
+    }
+
+    function restartScroll() {
+      lyrics.classList.remove("paused");
+      isPaused = false;
+      lyrics.style.animation = "none";
+      void lyrics.offsetWidth;
+      lyrics.style.animation = "scrollUp 30s linear infinite";
+    }
+  </script>
+</body>
+</html>
+
+
+
