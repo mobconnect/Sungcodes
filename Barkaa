@@ -816,4 +816,66 @@ lines = [
 for line in lines:
     print(line)
 
+react
+import React, { useEffect, useRef } from "react";
+
+export default function LyricsViewer({
+  lines = [],
+  currentLineIndex = 0,
+  className = "",
+}) {
+  const lineRefs = useRef([]);
+
+  useEffect(() => {
+    const el = lineRefs.current[currentLineIndex];
+    if (el) {
+      el.scrollIntoView({
+        block: "start",
+        inline: "nearest",
+        behavior: "smooth",
+      });
+    }
+  }, [currentLineIndex]);
+
+  return (
+    <div
+      className={`lyrics-viewer ${className}`}
+      style={{
+        height: "70vh",
+        overflowY: "auto",
+        padding: "24px",
+        background: "#0b0b0b",
+        borderRadius: "16px",
+        border: "1px solid #333",
+      }}
+    >
+      {lines.map((line, index) => {
+        const active = index === currentLineIndex;
+
+        return (
+          <div
+            key={index}
+            ref={(el) => (lineRefs.current[index] = el)}
+            className={`lyric-line ${active ? "active" : ""}`}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: "10px",
+              textAlign: "center",
+              transition: "all 0.25s ease",
+              background: active ? "#ffd966" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? "700" : "400",
+              transform: active ? "scale(1.03)" : "scale(1)",
+              opacity: active ? 1 : 0.65,
+            }}
+          >
+            {line.text ?? line}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 
