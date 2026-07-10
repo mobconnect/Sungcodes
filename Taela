@@ -1,0 +1,130 @@
+Watch this
+import React, { useState } from "react";
+
+export default function WatchThis() {
+  const [lyrics] = useState([
+    "The energy is loud and rebellious.",
+    "The mood feels like a warning shot.",
+    "Confidence leads the whole track.",
+    "The vibe is sharp and fearless.",
+    "The song comes in with attitude."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Keep your demons
+import React, { useState } from "react";
+
+export default function KeepYourDemons() {
+  const [lyrics] = useState([
+    "The song feels dark but controlled.",
+    "Inner struggle is the center of it.",
+    "The mood is honest and raw.",
+    "The message leans toward survival.",
+    "The tension never fully disappears."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Trophy
+import React, { useState } from "react";
+
+export default function Trophy() {
+  const [lyrics] = useState([
+    "The mood is triumphant and proud.",
+    "Winning feels hard-earned.",
+    "The track celebrates self-worth.",
+    "The energy stays bright.",
+    "The vibe is all about coming out on top."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Good in bed
+import React, { useState } from "react";
+
+export default function GoodInBed() {
+  const [lyrics] = useState([
+    "The tone is cheeky and playful.",
+    "The song leans into confidence.",
+    "The mood is flirty and fun.",
+    "The energy stays light but bold.",
+    "The track doesn't take itself too seriously."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+not my problem
+import React, { useState } from "react";
+
+export default function NotMyProblem() {
+  const [lyrics] = useState([
+    "The attitude is cold and detached.",
+    "The narrator draws a hard boundary.",
+    "The mood is sharp and dismissive.",
+    "The message is about self-protection.",
+    "The energy stays unapologetic."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Javascript
+const taelaSongs = {
+  watchThis: [
+    "The energy is loud and rebellious.",
+    "The mood feels like a warning shot.",
+    "Confidence leads the whole track.",
+    "The vibe is sharp and fearless.",
+    "The song comes in with attitude."
+  ],
+  keepYourDemons: [
+    "The song feels dark but controlled.",
+    "Inner struggle is the center of it.",
+    "The mood is honest and raw.",
+    "The message leans toward survival.",
+    "The tension never fully disappears."
+  ],
+  trophy: [
+    "The mood is triumphant and proud.",
+    "Winning feels hard-earned.",
+    "The track celebrates self-worth.",
+    "The energy stays bright.",
+    "The vibe is all about coming out on top."
+  ]
+};
+
