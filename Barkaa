@@ -1,0 +1,819 @@
+const barkaSongs = [
+  "For My Tittas",
+  "Our Lives Matter",
+  "I Can't Breathe",
+  "22Clan",
+  "Groovy",
+  "Blak Matriarchy",
+  "Bow Down",
+  "Come Back",
+  "Godz",
+  "King Brown",
+  "Division",
+  "We Up",
+  "Preach",
+  "Alinta",
+  "T.I.D.D.A Freestyle",
+  "Fruition",
+  "Boujee & Brown",
+  "Big Mood",
+  "Ngamaka",
+  "Bow Down (Remix)",
+  "Nothing's Free"
+];
+
+barkaSongs.forEach((song, index) => {
+  console.log(`${index + 1}. ${song} — power, truth, identity, and Blak strength`);
+});
+
+python 
+songs = [
+    "For My Tittas",
+    "Our Lives Matter",
+    "I Can't Breathe",
+    "22Clan",
+    "Groovy",
+    "Blak Matriarchy",
+    "Bow Down",
+    "Come Back",
+    "Godz",
+    "King Brown",
+    "Division",
+    "We Up",
+    "Preach",
+    "Alinta",
+    "T.I.D.D.A Freestyle",
+    "Fruition",
+    "Boujee & Brown",
+    "Big Mood",
+    "Ngamaka",
+    "Bow Down (Remix)",
+    "Nothing's Free"
+]
+
+for s in songs:
+    print(f"{s} -> truth, pride, resistance, survival")
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BARKAA Song Code Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      width: 90vw;
+      max-width: 700px;
+      height: 72vh;
+      overflow: hidden;
+      border: 2px solid #ff6b6b;
+      border-radius: 14px;
+      background: #000;
+      position: relative;
+    }
+    .scroll {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      line-height: 2;
+      animation: rise 35s linear infinite;
+    }
+    .line {
+      margin: 14px 0;
+    }
+    .highlight {
+      color: #ff6b6b;
+      font-weight: bold;
+      font-size: 1.15rem;
+    }
+    @keyframes rise {
+      from { transform: translateY(0); }
+      to { transform: translateY(-190%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="scroll">
+      <div class="line">For My Tittas — strength and sisterhood.</div>
+      <div class="line">Our Lives Matter — truth and visibility.</div>
+      <div class="line highlight">I Can’t Breathe — pain, protest, and urgency.</div>
+      <div class="line">22Clan — identity and community.</div>
+      <div class="line">Groovy — energy and expression.</div>
+      <div class="line highlight">Blak Matriarchy — power and pride.</div>
+      <div class="line">Bow Down — command and confidence.</div>
+      <div class="line">We Up — rise, voice, and momentum.</div>
+      <div class="line">Preach — message and conviction.</div>
+      <div class="line highlight">Nothing’s Free — survival, cost, and truth.</div>
+    </div>
+  </div>
+</body>
+</html>
+
+Roblox lua
+local songs = {
+    "For My Tittas",
+    "Our Lives Matter",
+    "I Can't Breathe",
+    "22Clan",
+    "Groovy",
+    "Blak Matriarchy",
+    "Bow Down",
+    "Come Back",
+    "Godz",
+    "King Brown",
+    "Division",
+    "We Up",
+    "Preach",
+    "Alinta",
+    "T.I.D.D.A Freestyle",
+    "Fruition",
+    "Boujee & Brown",
+    "Big Mood",
+    "Ngamaka",
+    "Bow Down (Remix)",
+    "Nothing's Free"
+}
+
+for i, song in ipairs(songs) do
+    print(i .. ". " .. song .. " - truth, pride, resistance, survival")
+end
+
+script
+function barkaStyle() {
+  console.log("Voice: loud, fearless, Blak, and proud.");
+  console.log("Theme: identity, community, survival, and resistance.");
+  console.log("Energy: raw, honest, political, and powerful.");
+  console.log("Message: keep telling the truth.");
+}
+
+barkaStyle();
+
+const barkaThemes = [
+  "Truth over silence.",
+  "Blak pride and identity.",
+  "Community, survival, and power.",
+  "Resistance with purpose.",
+  "Voice for the next generation."
+];
+
+java
+function groovyTheme() {
+  let confidence = true;
+  let groove = "back";
+  let pride = "Blak";
+  let energy = "playful, bold, untouchable";
+
+  console.log("Verse: I left the old life behind and found myself again.");
+  console.log("Chorus: I got my groove back, and I’m owning it.");
+  console.log("Verse: I carry the movement of the women before me.");
+  console.log("Bridge: No shame, no fear, just pride and rhythm.");
+  console.log("Outro: This is me — proud, loud, and groovy.");
+}
+
+groovyTheme();
+
+python
+def groovy_theme():
+    lines = [
+        "I left the old life behind and found myself again.",
+        "I got my groove back, and I’m owning it.",
+        "I carry the movement of the women before me.",
+        "No shame, no fear, just pride and rhythm.",
+        "This is me — proud, loud, and groovy."
+    ]
+
+    for line in lines:
+        print(line)
+
+groovy_theme()
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groovy Theme Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      width: 90vw;
+      max-width: 700px;
+      height: 70vh;
+      overflow: hidden;
+      border: 2px solid #7df9ff;
+      border-radius: 14px;
+      background: #000;
+      position: relative;
+    }
+    .scroll {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      line-height: 2;
+      animation: rise 30s linear infinite;
+    }
+    .line {
+      margin: 14px 0;
+    }
+    .highlight {
+      color: #7df9ff;
+      font-weight: bold;
+      font-size: 1.15rem;
+    }
+    @keyframes rise {
+      from { transform: translateY(0); }
+      to { transform: translateY(-180%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="scroll">
+      <div class="line">I left the old life behind.</div>
+      <div class="line">I found myself again.</div>
+      <div class="line highlight">I got my groove back.</div>
+      <div class="line">The women before me made the way.</div>
+      <div class="line">No shame, no fear, just rhythm.</div>
+      <div class="line highlight">Proud, loud, and groovy.</div>
+    </div>
+  </div>
+</body>
+</html>
+
+roblox lua
+local lines = {
+    "I left the old life behind.",
+    "I found myself again.",
+    "I got my groove back.",
+    "The women before me made the way.",
+    "No shame, no fear, just rhythm.",
+    "Proud, loud, and groovy."
+}
+
+for _, line in ipairs(lines) do
+    print(line)
+end
+
+short song script
+function groovyScript() {
+  console.log("Verse: tension breaks, confidence rises.");
+  console.log("Chorus: got my groove back.");
+  console.log("Verse: I stand with my mob and my matriarchs.");
+  console.log("Bridge: the past made me stronger.");
+  console.log("Final: bold, rooted, groovy.");
+}
+
+groovyScript();
+
+karaoke
+[Intro]
+Feel the rhythm. Feel the pride.
+
+[Verse 1]
+I left the old weight behind,
+stepped back into my own shine.
+
+[Pre-Chorus]
+The past tried to hold me down,
+but I found my pulse, my sound.
+
+[Chorus]
+I got my groove back,
+yeah I’m moving like that.
+Bold in my body,
+strong in my path.
+I got my groove back,
+no fear, no lack.
+I’m proud of my roots,
+and I’m coming with that.
+
+[Verse 2]
+Built by my matriarchs,
+carrying fire in my heart.
+
+[Bridge]
+No shame, no silence,
+only truth and vibrant light.
+
+[Final Chorus]
+I got my groove back,
+yeah I’m moving like that.
+Bold in my body,
+strong in my path.
+I got my groove back,
+no fear, no lack.
+I’m proud of my roots,
+and I’m coming with that.
+
+[Outro]
+Groovy.
+
+karaoke screen
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groovy Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #120f1d, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 90vw;
+      max-width: 760px;
+      height: 75vh;
+      border: 2px solid #7df9ff;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.85);
+      padding: 24px;
+      overflow: hidden;
+      position: relative;
+    }
+    .line {
+      font-size: 1.35rem;
+      line-height: 1.8;
+      text-align: center;
+      margin: 14px 0;
+      opacity: 0.7;
+    }
+    .active {
+      color: #7df9ff;
+      font-size: 1.6rem;
+      font-weight: bold;
+      opacity: 1;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #ffd966;
+      margin-bottom: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">Groovy</div>
+    <div class="line">Feel the rhythm. Feel the pride.</div>
+    <div class="line">I left the old weight behind.</div>
+    <div class="line active">I got my groove back.</div>
+    <div class="line">Built by my matriarchs.</div>
+    <div class="line">No shame, no silence.</div>
+    <div class="line active">I’m proud of my roots.</div>
+    <div class="line">Groovy.</div>
+  </div>
+</body>
+</html>
+
+java script
+const lines = [
+  "Feel the rhythm. Feel the pride.",
+  "I left the old weight behind.",
+  "I got my groove back.",
+  "Built by my matriarchs.",
+  "No shame, no silence.",
+  "I’m proud of my roots.",
+  "Groovy."
+];
+
+let i = 0;
+const display = document.getElementById("lyricLine");
+
+function nextLine() {
+  display.textContent = lines[i];
+  i = (i + 1) % lines.length;
+}
+
+setInterval(nextLine, 2500);
+
+python
+lines = [
+    "Feel the rhythm. Feel the pride.",
+    "I left the old weight behind.",
+    "I got my groove back.",
+    "Built by my matriarchs.",
+    "No shame, no silence.",
+    "I’m proud of my roots.",
+    "Groovy."
+]
+
+for line in lines:
+    print(line)
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beat Timing Lyrics</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .player {
+      width: 90vw;
+      max-width: 700px;
+    }
+    .line {
+      padding: 14px 18px;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: #222;
+      opacity: 0.55;
+      transition: 0.3s ease;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    .active {
+      background: #ffd966;
+      color: #111;
+      opacity: 1;
+      transform: scale(1.04);
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 16px;
+      margin: 0 8px 16px 0;
+      border: none;
+      border-radius: 8px;
+      background: #ffd966;
+      color: #111;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <button onclick="startKaraoke()">Start</button>
+    <button onclick="stopKaraoke()">Stop</button>
+
+    <div id="lyrics">
+      <div class="line">Feel the rhythm. Feel the pride.</div>
+      <div class="line">I left the old weight behind.</div>
+      <div class="line">I got my groove back.</div>
+      <div class="line">Built by my matriarchs.</div>
+      <div class="line">No shame, no silence.</div>
+      <div class="line">Proud, loud, and groovy.</div>
+    </div>
+  </div>
+
+  <script>
+    const lines = document.querySelectorAll(".line");
+    const timing = [0, 2500, 5000, 7500, 10000, 12500];
+    let timers = [];
+
+    function clearAll() {
+      timers.forEach(t => clearTimeout(t));
+      timers = [];
+      lines.forEach(line => line.classList.remove("active"));
+    }
+
+    function startKaraoke() {
+      clearAll();
+      lines.forEach((line, i) => {
+        const t = setTimeout(() => {
+          lines.forEach(l => l.classList.remove("active"));
+          line.classList.add("active");
+        }, timing[i]);
+        timers.push(t);
+      });
+    }
+
+    function stopKaraoke() {
+      clearAll();
+    }
+  </script>
+</body>
+</html>
+
+java
+function ngamakaTheme() {
+  let mother = "river";
+  let heartbeat = "country";
+  let state = {
+    water: "precious",
+    fish: "gone",
+    truth: "urgent",
+    pride: true
+  };
+
+  console.log("Verse: My mother is the river, and the river is my mother.");
+  console.log("Verse: When the water is taken, the people feel it too.");
+  console.log("Chorus: We hear the cry of the land and the river.");
+  console.log("Bridge: Respect the old ways, protect the future.");
+  console.log("Outro: Ngamaka — mother, heartbeat, country.");
+}
+
+ngamakaTheme();
+
+python
+def ngamaka_theme():
+    lines = [
+        "My mother is the river, and the river is my mother.",
+        "When the water is taken, the people feel it too.",
+        "We hear the cry of the land and the river.",
+        "Respect the old ways, protect the future.",
+        "Ngamaka — mother, heartbeat, country."
+    ]
+
+    for line in lines:
+        print(line)
+
+ngamaka_theme()
+
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ngamaka Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #07111f, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      width: 90vw;
+      max-width: 720px;
+      height: 72vh;
+      overflow: hidden;
+      border: 2px solid #5fd3ff;
+      border-radius: 14px;
+      background: rgba(0,0,0,0.9);
+      position: relative;
+    }
+    .scroll {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      line-height: 2;
+      animation: rise 34s linear infinite;
+    }
+    .line {
+      margin: 14px 0;
+    }
+    .highlight {
+      color: #5fd3ff;
+      font-weight: bold;
+      font-size: 1.15rem;
+    }
+    @keyframes rise {
+      from { transform: translateY(0); }
+      to { transform: translateY(-190%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="scroll">
+      <div class="line">Ngamaka means mother.</div>
+      <div class="line">The river is our heartbeat.</div>
+      <div class="line highlight">When the water hurts, the people hurt.</div>
+      <div class="line">Respect the land.</div>
+      <div class="line">Protect the future.</div>
+      <div class="line highlight">Mother, heartbeat, country.</div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+Roblox lua
+local lines = {
+    "Ngamaka means mother.",
+    "The river is our heartbeat.",
+    "When the water hurts, the people hurt.",
+    "Respect the land.",
+    "Protect the future.",
+    "Mother, heartbeat, country."
+}
+
+for _, line in ipairs(lines) do
+    print(line)
+end
+
+karaoke style
+[Intro]
+Ngamaka.
+
+[Verse 1]
+My mother is the river,
+and the river is my mother.
+
+[Pre-Chorus]
+When the water fades,
+the people feel the loss.
+
+[Chorus]
+Hear the river cry,
+hear the country speak,
+protect what gave us life,
+protect what keeps us deep.
+
+[Verse 2]
+The old ways know the answer,
+the land remembers still.
+
+[Bridge]
+Respect the truth,
+respect the water,
+respect the future.
+
+[Final Chorus]
+Ngamaka, mother and heartbeat,
+Ngamaka, country and life.
+
+[Outro]
+Ngamaka.
+
+karaoke
+[Intro]
+We up.
+
+[Verse 1]
+I came through the storm,
+I came through the fight,
+I learned how to stand,
+I learned how to write my light.
+
+[Pre-Chorus]
+Nobody bringing me down,
+not now, not again,
+I’m moving with my mob,
+I’m rising with my friends.
+
+[Chorus]
+We up, we up,
+nothing can hold us now.
+We up, we up,
+we’re turning it around.
+Hands in the air,
+voices getting loud,
+we up, we up,
+we’re making our crowd.
+
+[Verse 2]
+Built from the struggle,
+built from the truth,
+carrying the fire,
+carrying the proof.
+
+[Bridge]
+No fear, no silence,
+we’re here and we know,
+the higher we climb,
+the stronger we grow.
+
+[Final Chorus]
+We up, we up,
+nothing can hold us now.
+We up, we up,
+we’re turning it around.
+Hands in the air,
+voices getting loud,
+we up, we up,
+we’re making our crowd.
+
+[Outro]
+We up.
+
+java script
+function weUpTheme() {
+  console.log("Verse: I came through the storm and found my power.");
+  console.log("Pre-Chorus: Nobody bringing me down again.");
+  console.log("Chorus: We up, we up — turning it around.");
+  console.log("Verse: Built from struggle, truth, and fire.");
+  console.log("Bridge: No fear, no silence, only rise.");
+  console.log("Outro: We up.");
+}
+
+weUpTheme();
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We Up Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #111, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 90vw;
+      max-width: 760px;
+      height: 75vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.85);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .line {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      text-align: center;
+      margin: 14px 0;
+      opacity: 0.75;
+    }
+    .active {
+      color: #ffd966;
+      font-size: 1.55rem;
+      font-weight: bold;
+      opacity: 1;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #7df9ff;
+      margin-bottom: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">We Up</div>
+    <div class="line">I came through the storm.</div>
+    <div class="line active">Nobody bringing me down again.</div>
+    <div class="line">We up, we up.</div>
+    <div class="line">Built from struggle, truth, and fire.</div>
+    <div class="line active">No fear, no silence.</div>
+    <div class="line">We up.</div>
+  </div>
+</body>
+</html>
+
+python
+lines = [
+    "I came through the storm and found my power.",
+    "Nobody bringing me down again.",
+    "We up, we up — turning it around.",
+    "Built from struggle, truth, and fire.",
+    "No fear, no silence, only rise.",
+    "We up."
+]
+
+for line in lines:
+    print(line)
+
+
