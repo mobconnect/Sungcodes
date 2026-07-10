@@ -1,0 +1,123 @@
+Diamonds
+function diamondsTheme() {
+  console.log("The message is about shining through pressure.");
+  console.log("The mood feels bright and steady.");
+  console.log("Confidence and beauty are front and center.");
+  console.log("The vibe is polished and powerful.");
+}
+
+Rehab
+function rehabTheme() {
+  console.log("The song focuses on resistance and emotional distance.");
+  console.log("The tone is cold but controlled.");
+  console.log("The message is about refusing a bad situation.");
+  console.log("The vibe feels tense and personal.");
+}
+
+work
+const work = [
+  "The pace is relentless.",
+  "A relationship feels strained.",
+  "The rhythm keeps moving.",
+  "The attitude stays sharp."
+];
+
+Diamonds
+const diamonds = [
+  "Pressure doesn't dim the shine.",
+  "Broken trust leaves a clear edge.",
+  "Strength stays visible.",
+  "The light keeps cutting through."
+];
+
+Rehab
+const rehab = [
+  "The pull of a bad habit is strong.",
+  "Refusal becomes part of the story.",
+  "The conflict feels personal.",
+  "The voice stays defiant."
+];
+
+stay
+const stay = [
+  "The moment feels fragile.",
+  "Wanting someone to remain is the center.",
+  "Uncertainty hangs in the air.",
+  "The emotion stays close."
+];
+
+Rude boy
+const rudeBoy = [
+  "The tone is flirtatious and bold.",
+  "Confidence drives the hook.",
+  "The energy is playful.",
+  "The challenge is part of the appeal."
+];
+
+const umbrella = [
+  "Support is the main idea.",
+  "The promise is to stay through hard weather.",
+  "The chorus feels protective.",
+  "The mood is uplifting."
+];
+
+we found love
+const weFoundLove = [
+  "Love hits fast and hard.",
+  "The feeling is electric.",
+  "Joy and chaos happen together.",
+  "The rush never really stops."
+];
+
+python
+songs = {
+    "diamonds": [
+        "Pressure doesn't dim the shine.",
+        "Broken trust leaves a clear edge.",
+        "Strength stays visible.",
+        "The light keeps cutting through."
+    ],
+    "rehab": [
+        "The pull of a bad habit is strong.",
+        "Refusal becomes part of the story.",
+        "The conflict feels personal.",
+        "The voice stays defiant."
+    ],
+    "stay": [
+        "The moment feels fragile.",
+        "Wanting someone to remain is the center.",
+        "Uncertainty hangs in the air.",
+        "The emotion stays close."
+    ]
+}
+
+React
+const songs = {
+  Diamonds: [
+    "Pressure doesn't dim the shine.",
+    "Broken trust leaves a clear edge.",
+    "Strength stays visible.",
+    "The light keeps cutting through."
+  ],
+  Rehab: [
+    "The pull of a bad habit is strong.",
+    "Refusal becomes part of the story.",
+    "The conflict feels personal.",
+    "The voice stays defiant."
+  ]
+};
+
+export default function RihannaCodes() {
+  return (
+    <div>
+      {Object.entries(songs).map(([title, lines]) => (
+        <section key={title}>
+          <h3>{title}</h3>
+          {lines.map((line) => <p key={line}>{line}</p>)}
+        </section>
+      ))}
+    </div>
+  );
+}
+
+
