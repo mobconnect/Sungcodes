@@ -1,0 +1,157 @@
+Heartbreak Hotel
+import React, { useState } from "react";
+
+export default function HeartbreakHotel() {
+  const [lines] = useState([
+    "The mood is lonely and dramatic.",
+    "The song feels like a warning sign.",
+    "Heartache is the main character.",
+    "The energy is classic rock and roll.",
+    "The whole track sounds unforgettable."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Hound dog
+import React, { useState } from "react";
+
+export default function HoundDog() {
+  const [lines] = useState([
+    "The track has a sharp, playful bite.",
+    "The mood is wild and energetic.",
+    "The performance feels defiant.",
+    "The rhythm keeps driving forward.",
+    "The song is pure Elvis swagger."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Jailhouse rock
+import React, { useState } from "react";
+
+export default function JailhouseRock() {
+  const [lines] = useState([
+    "The song is loud and irresistible.",
+    "The vibe is built for dancing.",
+    "The mood is playful and rebellious.",
+    "The beat keeps everything moving.",
+    "The whole thing feels iconic."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Cant help falling in love
+import React, { useState } from "react";
+
+export default function CantHelpFallingInLove() {
+  const [lines] = useState([
+    "The song is tender and timeless.",
+    "The feeling is calm and sincere.",
+    "Love comes across as inevitable.",
+    "The tone is warm and gentle.",
+    "The melody feels unforgettable."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Suspicious Minds
+import React, { useState } from "react";
+
+export default function SuspiciousMinds() {
+  const [lines] = useState([
+    "The mood is tense and uncertain.",
+    "Trust is the central issue.",
+    "The song feels dramatic and slow-burning.",
+    "Every line carries pressure.",
+    "The emotional stakes stay high."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Burning love
+import React, { useState } from "react";
+
+export default function BurningLove() {
+  const [lines] = useState([
+    "The song burns with urgency.",
+    "The energy is hot and restless.",
+    "The feeling is intense from the start.",
+    "The rhythm keeps pushing harder.",
+    "The track sounds like pure fire."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+
+}
+
+Javascript
+const elvisSongs = {
+  heartbreakHotel: [
+    "The mood is lonely and dramatic.",
+    "The song feels like a warning sign.",
+    "Heartache is the main character.",
+    "The energy is classic rock and roll.",
+    "The whole track sounds unforgettable."
+  ],
+  houndDog: [
+    "The track has a sharp, playful bite.",
+    "The mood is wild and energetic.",
+    "The performance feels defiant.",
+    "The rhythm keeps driving forward.",
+    "The song is pure Elvis swagger."
+  ],
+  cantHelpFallingInLove: [
+    "The song is tender and timeless.",
+    "The feeling is calm and sincere.",
+    "Love comes across as inevitable.",
+    "The tone is warm and gentle.",
+    "The melody feels unforgettable."
+  ]
+};
+
+
+
+
+
+
