@@ -1,0 +1,23 @@
+const postMaloneSongs = {
+  whiteIverson: [
+    "The song feels cool and self-made.",
+    "Confidence comes through early.",
+    "The mood is laid-back but stylish.",
+    "The track builds on momentum.",
+    "It sounds like a breakthrough moment."
+  ],
+  congratulations: [
+    "The song celebrates a win after struggle.",
+    "The energy is proud and reflective.",
+    "Success feels earned.",
+    "The mood is catchy and triumphant.",
+    "The track carries a big moment feel."
+  ],
+  circles: [
+    "The mood is reflective and a little sad.",
+    "The relationship feels stuck in a loop.",
+    "The sound stays smooth and melodic.",
+    "The emotion comes back around.",
+    "The track feels restless."
+  ]
+};
