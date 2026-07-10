@@ -1,0 +1,153 @@
+Folsom prison blues
+import React, { useState } from "react";
+
+export default function FolsomPrisonBlues() {
+  const [lines] = useState([
+    "The mood is gritty and confined.",
+    "The train imagery keeps rolling through.",
+    "The story feels cold and restless.",
+    "The song carries a classic outlaw feel.",
+    "The rhythm stays unforgettable."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+i walk the line
+import React, { useState } from "react";
+
+export default function IWalkTheLine() {
+  const [lines] = useState([
+    "The song is steady and disciplined.",
+    "The mood feels sincere and calm.",
+    "Devotion stays at the center.",
+    "The tone is simple but powerful.",
+    "The track sounds timeless."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Ring of fire
+import React, { useState } from "react";
+
+export default function RingOfFire() {
+  const [lines] = useState([
+    "The feeling burns hot and strong.",
+    "Love comes across as overwhelming.",
+    "The melody is bold and iconic.",
+    "The energy keeps rising.",
+    "The song sounds instantly recognizable."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Hurt
+import React, { useState } from "react";
+
+export default function Hurt() {
+  const [lines] = useState([
+    "The mood is raw and reflective.",
+    "Pain and regret sit close together.",
+    "The performance feels exposed.",
+    "The song carries a heavy emotional weight.",
+    "The silence between lines matters too."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Man in Black
+import React, { useState } from "react";
+
+export default function ManInBlack() {
+  const [lines] = useState([
+    "The song is direct and principled.",
+    "The mood is serious and plainspoken.",
+    "It speaks for people under pressure.",
+    "The voice is strong and clear.",
+    "The message is rooted in conscience."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Jackson
+import React, { useState } from "react";
+
+export default function Jackson() {
+  const [lines] = useState([
+    "The song has a lively back-and-forth feel.",
+    "The mood is playful and snappy.",
+    "The energy moves fast.",
+    "The duet style gives it extra charm.",
+    "The track feels full of attitude."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Javascript version
+const johnnyCashSongs = {
+  folsomPrisonBlues: [
+    "The mood is gritty and confined.",
+    "The train imagery keeps rolling through.",
+    "The story feels cold and restless.",
+    "The song carries a classic outlaw feel.",
+    "The rhythm stays unforgettable."
+  ],
+  iWalkTheLine: [
+    "The song is steady and disciplined.",
+    "The mood feels sincere and calm.",
+    "Devotion stays at the center.",
+    "The tone is simple but powerful.",
+    "The track sounds timeless."
+  ],
+  ringOfFire: [
+    "The feeling burns hot and strong.",
+    "Love comes across as overwhelming.",
+    "The melody is bold and iconic.",
+    "The energy keeps rising.",
+    "The song sounds instantly recognizable."
+  ]
+};
+
+
+
