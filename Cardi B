@@ -1,0 +1,1052 @@
+javascript
+const cardiBSongs = [
+  "Bodak Yellow",
+  "Bartier Cardi",
+  "Be Careful",
+  "Money",
+  "Press",
+  "Ring",
+  "I Like It",
+  "Taki Taki",
+  "Please Me",
+  "Up",
+  "WAP",
+  "Bongos",
+  "Like What (Freestyle)",
+  "Enough (Miami)",
+  "Outside",
+  "ErrTime",
+  "Imaginary Playerz",
+  "Pretty & Petty",
+  "Safe",
+  "Pick It Up"
+];
+
+cardiBSongs.forEach((song, index) => {
+  console.log(`${index + 1}. ${song} -> confidence, impact, and dominance`);
+});
+
+script
+function cardiBTheme() {
+  console.log("Verse: came from the struggle, turned pressure into power.");
+  console.log("Chorus: loud voice, big energy, no apology.");
+  console.log("Bridge: success, style, and unapologetic attitude.");
+  console.log("Outro: the room changes when she enters.");
+}
+
+cardiBTheme();
+
+python
+songs = [
+    "Bodak Yellow",
+    "Bartier Cardi",
+    "Be Careful",
+    "Money",
+    "Press",
+    "I Like It",
+    "Please Me",
+    "Up",
+    "WAP",
+    "Bongos",
+    "Enough (Miami)"
+]
+
+for s in songs:
+    print(f"{s}: confidence, impact, and dominance")
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardi B Song Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f12;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      width: 90vw;
+      max-width: 720px;
+      height: 72vh;
+      overflow: hidden;
+      border: 2px solid #ff4d8d;
+      border-radius: 14px;
+      background: #000;
+      position: relative;
+    }
+    .scroll {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      line-height: 2;
+      animation: rise 34s linear infinite;
+    }
+    .line {
+      margin: 12px 0;
+    }
+    .highlight {
+      color: #ff4d8d;
+      font-weight: bold;
+      font-size: 1.15rem;
+    }
+    @keyframes rise {
+      from { transform: translateY(0); }
+      to { transform: translateY(-180%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="scroll">
+      <div class="line">Bodak Yellow — breakthrough energy.</div>
+      <div class="line">Bartier Cardi — luxury and flex.</div>
+      <div class="line highlight">Money — power and independence.</div>
+      <div class="line">Press — pressure doesn’t scare her.</div>
+      <div class="line">Up — climbing higher.</div>
+      <div class="line highlight">WAP — bold and unforgettable.</div>
+      <div class="line">Enough (Miami) — statement mode.</div>
+      <div class="line">Pretty & Petty — style with bite.</div>
+    </div>
+  </div>
+</body>
+</html>
+
+React
+import React, { useEffect, useRef } from "react";
+
+export default function SongListViewer({ songs = [], currentIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentIndex];
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {songs.map((song, i) => {
+        const active = i === currentIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ff4d8d" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65
+            }}
+          >
+            {song}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+const cardiBTracks = [
+  "Bodak Yellow",
+  "Bartier Cardi",
+  "Be Careful",
+  "Money",
+  "Press",
+  "Ring",
+  "I Like It",
+  "Please Me",
+  "Up",
+  "WAP",
+  "Hot Shit",
+  "Bongos",
+  "Like What (Freestyle)",
+  "Enough (Miami)",
+  "Outside",
+  "Imaginary Playerz",
+  "Jealousy",
+  "Puntería",
+  "Wanna Be (Remix)",
+  "Pretty & Petty"
+];
+
+cardiBTracks.forEach((track, i) => {
+  console.log(`${i + 1}. ${track} -> confidence, pressure, and impact`);
+});
+
+theme
+function cardiBStyle() {
+  console.log("Verse: started from the bottom, now the whole room notices.");
+  console.log("Chorus: loud, fearless, and impossible to ignore.");
+  console.log("Bridge: success with attitude and no apology.");
+  console.log("Outro: the energy stays high.");
+}
+
+cardiBStyle();
+
+python
+tracks = [
+    "Bodak Yellow",
+    "Money",
+    "Press",
+    "I Like It",
+    "WAP",
+    "Hot Shit",
+    "Bongos",
+    "Enough (Miami)",
+    "Outside",
+    "Jealousy",
+    "Puntería"
+]
+
+for t in tracks:
+    print(f"{t}: confidence, pressure, and impact")
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardi B Discography Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f12;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      width: 90vw;
+      max-width: 720px;
+      height: 72vh;
+      overflow: hidden;
+      border: 2px solid #ff4d8d;
+      border-radius: 14px;
+      background: #000;
+      position: relative;
+    }
+    .scroll {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      line-height: 2;
+      animation: rise 34s linear infinite;
+    }
+    .line {
+      margin: 12px 0;
+    }
+    .highlight {
+      color: #ff4d8d;
+      font-weight: bold;
+      font-size: 1.15rem;
+    }
+    @keyframes rise {
+      from { transform: translateY(0); }
+      to { transform: translateY(-180%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="scroll">
+      <div class="line">Bodak Yellow — breakout power.</div>
+      <div class="line">Money — independence.</div>
+      <div class="line highlight">Press — pressure doesn’t shake her.</div>
+      <div class="line">I Like It — pop energy and swagger.</div>
+      <div class="line">WAP — bold statement.</div>
+      <div class="line highlight">Enough (Miami) — direct and sharp.</div>
+      <div class="line">Outside — fresh momentum.</div>
+      <div class="line">Puntería — global collaboration.</div>
+    </div>
+  </div>
+</body>
+</html>
+
+React
+import React, { useEffect, useRef } from "react";
+
+export default function DiscographyViewer({ songs = [], currentIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentIndex];
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {songs.map((song, i) => {
+        const active = i === currentIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ff4d8d" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65
+            }}
+          >
+            {song}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+javascript
+function cardiBUpTheme() {
+  console.log("Verse: confidence rises and the room feels it.");
+  console.log("Chorus: if it's up, then it's up, then it's stuck.");
+  console.log("Verse: pressure turns into power.");
+  console.log("Bridge: bold energy, no hesitation.");
+  console.log("Outro: the momentum stays up.");
+}
+
+cardiBUpTheme();
+
+Python
+def up_theme():
+    lines = [
+        "Confidence rises and the room feels it.",
+        "If it's up, then it's up, then it's stuck.",
+        "Pressure turns into power.",
+        "Bold energy, no hesitation.",
+        "The momentum stays up."
+    ]
+    for line in lines:
+        print(line)
+
+up_theme()
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardi B - Up Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #17111d, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 90vw;
+      max-width: 760px;
+      height: 75vh;
+      border: 2px solid #ff4d8d;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #7df9ff;
+      margin-bottom: 16px;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #ff4d8d;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">Up</div>
+    <div class="line">Confidence rises and the room feels it.</div>
+    <div class="line active">If it's up, then it's up, then it's stuck.</div>
+    <div class="line">Pressure turns into power.</div>
+    <div class="line">Bold energy, no hesitation.</div>
+    <div class="line">The momentum stays up.</div>
+  </div>
+</body>
+</html>
+
+React
+import React, { useEffect, useRef } from "react";
+
+export default function UpViewer({ lines = [], currentLineIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentLineIndex];
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentLineIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {lines.map((line, i) => {
+        const active = i === currentLineIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ff4d8d" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65
+            }}
+          >
+            {line}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+safe
+javascript
+function safeTheme() {
+  console.log("Verse: the relationship feels fragile and heavy.");
+  console.log("Chorus: what seemed secure starts to fall apart.");
+  console.log("Verse: trust, hurt, and honesty collide.");
+  console.log("Bridge: the truth changes everything.");
+  console.log("Outro: nothing stays safe forever.");
+}
+
+safeTheme();
+
+python
+def safe_theme():
+    lines = [
+        "The relationship feels fragile and heavy.",
+        "What seemed secure starts to fall apart.",
+        "Trust, hurt, and honesty collide.",
+        "The truth changes everything.",
+        "Nothing stays safe forever."
+    ]
+    for line in lines:
+        print(line)
+
+safe_theme()
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safe Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #1b1020, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 90vw;
+      max-width: 760px;
+      height: 75vh;
+      border: 2px solid #ff4d8d;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #7df9ff;
+      margin-bottom: 16px;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #ff4d8d;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">Safe</div>
+    <div class="line">The relationship feels fragile and heavy.</div>
+    <div class="line active">What seemed secure starts to fall apart.</div>
+    <div class="line">Trust, hurt, and honesty collide.</div>
+    <div class="line">The truth changes everything.</div>
+    <div class="line">Nothing stays safe forever.</div>
+  </div>
+</body>
+</html>
+
+React
+import React, { useEffect, useRef } from "react";
+
+export default function SafeViewer({ lines = [], currentLineIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentLineIndex];
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentLineIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {lines.map((line, i) => {
+        const active = i === currentLineIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ff4d8d" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65
+            }}
+          >
+            {line}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+
+karaoke layout
+[Intro]
+Safe, safe, safe.
+
+[Verse 1]
+I’ve been through the noise,
+I’ve been through the hurt,
+I need something real,
+I need something that works.
+
+[Pre-Chorus]
+When the world gets heavy,
+you make it feel light,
+I can let my guard down,
+and breathe tonight.
+
+[Chorus]
+Safe in your arms,
+safe in your name,
+safe when you hold me,
+safe through the rain.
+No more pretending,
+no more hiding away,
+I feel safe,
+I feel safe.
+
+[Verse 2]
+Some love feels risky,
+some love feels small,
+but this one stands strong,
+when the pieces fall.
+
+[Bridge]
+Hold me down,
+keep me close,
+be the one I trust the most.
+
+[Final Chorus]
+Safe in your arms,
+safe in your name,
+safe when you hold me,
+safe through the rain.
+I feel safe,
+I feel safe.
+
+[Outro]
+Safe, safe, safe.
+
+react
+import React, { useEffect, useRef } from "react";
+
+export default function KaraokeViewer({ lines = [], currentLineIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentLineIndex];
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [currentLineIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {lines.map((line, i) => {
+        const active = i === currentLineIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ff4d8d" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65,
+              transition: "all 0.25s ease"
+            }}
+          >
+            {line}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+example usage
+const lines = [
+  "I’ve been through the noise, I’ve been through the hurt.",
+  "When the world gets heavy, you make it feel light.",
+  "Safe in your arms, safe in your name.",
+  "I feel safe, I feel safe.",
+  "Hold me down, keep me close."
+];
+
+java script
+const dramaTracks = [
+  "Dead",
+  "Pretty & Petty",
+  "Magnet",
+  "Man Of Your Word",
+  "What's Goin On",
+  "Shower Tears",
+  "Outside",
+  "ErrTime",
+  "Safe",
+  "Pick It Up",
+  "Principal",
+  "Imaginary Playerz",
+  "WAP",
+  "Up"
+];
+
+dramaTracks.forEach((track, index) => {
+  console.log(`${index + 1}. ${track} -> conflict, confidence, heartbreak, and power`);
+});
+
+theme
+function amITheDramaTheme() {
+  console.log("Dead: the final word and the cold cut-off.");
+  console.log("Pretty & Petty: sharp lines, no mercy, no filter.");
+  console.log("Magnet: attraction, tension, and rivalry.");
+  console.log("Man Of Your Word: trust breaks under pressure.");
+  console.log("What's Goin On: confusion, pain, and truth.");
+  console.log("Shower Tears: emotion spills out.");
+  console.log("Outside: freedom and forward motion.");
+  console.log("ErrTime: the cycle keeps repeating.");
+  console.log("Safe: searching for real security.");
+  console.log("Pick It Up: energy, control, and momentum.");
+}
+
+amITheDramaTheme();
+
+python
+tracks = [
+    "Dead",
+    "Pretty & Petty",
+    "Magnet",
+    "Man Of Your Word",
+    "What's Goin On",
+    "Shower Tears",
+    "Outside",
+    "ErrTime",
+    "Safe",
+    "Pick It Up",
+    "Principal",
+    "Imaginary Playerz"
+]
+
+for track in tracks:
+    print(f"{track}: conflict, confidence, heartbreak, and power")
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Am I The Drama? Theme Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f12;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      width: 90vw;
+      max-width: 720px;
+      height: 72vh;
+      overflow: hidden;
+      border: 2px solid #ff4d8d;
+      border-radius: 14px;
+      background: #000;
+      position: relative;
+    }
+    .scroll {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      line-height: 2;
+      animation: rise 36s linear infinite;
+    }
+    .line {
+      margin: 12px 0;
+    }
+    .highlight {
+      color: #ff4d8d;
+      font-weight: bold;
+      font-size: 1.15rem;
+    }
+    @keyframes rise {
+      from { transform: translateY(0); }
+      to { transform: translateY(-190%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="scroll">
+      <div class="line">Dead — final and blunt.</div>
+      <div class="line">Pretty & Petty — sharp and unforgiving.</div>
+      <div class="line highlight">Magnet — tension and pull.</div>
+      <div class="line">Man Of Your Word — trust under pressure.</div>
+      <div class="line">What's Goin On — confusion and hurt.</div>
+      <div class="line highlight">Shower Tears — emotion in motion.</div>
+      <div class="line">Outside — freedom and escape.</div>
+      <div class="line">ErrTime — repetition and frustration.</div>
+      <div class="line highlight">Safe — searching for something real.</div>
+    </div>
+  </div>
+</body>
+</html>
+
+React
+import React, { useEffect, useRef } from "react";
+
+export default function DramaViewer({ tracks = [], currentIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentIndex];
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {tracks.map((track, i) => {
+        const active = i === currentIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ff4d8d" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65
+            }}
+          >
+            {track}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+
+const amITheDrama = [
+  { track: "Dead", theme: "cold ending, betrayal, and final words" },
+  { track: "Hello", theme: "arrival, attitude, and announcement energy" },
+  { track: "Magnet", theme: "pull, tension, and attraction" },
+  { track: "Pick It Up", theme: "momentum, flirting, and motion" },
+  { track: "Imaginary Playerz", theme: "luxury, competition, and status" },
+  { track: "Bodega Baddie", theme: "roots, pride, and local power" },
+  { track: "Salute", theme: "confidence, victory, and respect" },
+  { track: "Safe", theme: "trust, vulnerability, and security" },
+  { track: "Man Of Your Word", theme: "promises, disappointment, and clarity" },
+  { track: "What's Goin On", theme: "confusion, emotion, and relationship strain" },
+  { track: "Shower Tears", theme: "hurt, release, and emotional overflow" },
+  { track: "Outside", theme: "freedom, distance, and forward motion" },
+  { track: "Pretty & Petty", theme: "sharp wit, shading, and self-defense" },
+  { track: "Better Than You", theme: "rivalry, flexing, and one-upmanship" },
+  { track: "On My Back", theme: "pressure, desire, and intensity" },
+  { track: "ErrTime", theme: "repetition, frustration, and control" },
+  { track: "Check Please", theme: "assertion, money, and being in charge" },
+  { track: "Principal", theme: "authority, confidence, and standout presence" },
+  { track: "Trophies", theme: "winning, celebration, and receipts" },
+  { track: "Nice Guy", theme: "mixed signals and judgment" },
+  { track: "Killin You Hoes", theme: "domination, rivalry, and no mercy" },
+  { track: "Up", theme: "lift, confidence, and momentum" },
+  { track: "WAP", theme: "boldness, swagger, and cultural impact" }
+];
+
+amITheDrama.forEach(({ track, theme }, i) => {
+  console.log(`${i + 1}. ${track} -> ${theme}`);
+});
+
+python
+tracks = {
+    "Dead": "cold ending, betrayal, and final words",
+    "Hello": "arrival, attitude, and announcement energy",
+    "Magnet": "pull, tension, and attraction",
+    "Pick It Up": "momentum, flirting, and motion",
+    "Imaginary Playerz": "luxury, competition, and status",
+    "Bodega Baddie": "roots, pride, and local power",
+    "Salute": "confidence, victory, and respect",
+    "Safe": "trust, vulnerability, and security",
+    "Man Of Your Word": "promises, disappointment, and clarity",
+    "What's Goin On": "confusion, emotion, and relationship strain",
+    "Shower Tears": "hurt, release, and emotional overflow",
+    "Outside": "freedom, distance, and forward motion",
+    "Pretty & Petty": "sharp wit, shading, and self-defense",
+    "Better Than You": "rivalry, flexing, and one-upmanship",
+    "On My Back": "pressure, desire, and intensity",
+    "ErrTime": "repetition, frustration, and control",
+    "Check Please": "assertion, money, and being in charge",
+    "Principal": "authority, confidence, and standout presence",
+    "Trophies": "winning, celebration, and receipts",
+    "Nice Guy": "mixed signals and judgment",
+    "Killin You Hoes": "domination, rivalry, and no mercy",
+    "Up": "lift, confidence, and momentum",
+    "WAP": "boldness, swagger, and cultural impact"
+}
+
+for track, theme in tracks.items():
+    print(f"{track}: {theme}")
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AM I THE DRAMA? Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f12;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      width: 90vw;
+      max-width: 760px;
+      height: 74vh;
+      overflow: hidden;
+      border: 2px solid #ff4d8d;
+      border-radius: 14px;
+      background: #000;
+      position: relative;
+    }
+    .scroll {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      line-height: 2;
+      animation: rise 48s linear infinite;
+    }
+    .line {
+      margin: 10px 0;
+    }
+    .highlight {
+      color: #ff4d8d;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    @keyframes rise {
+      from { transform: translateY(0); }
+      to { transform: translateY(-220%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="scroll">
+      <div class="line">Dead — betrayal and final words.</div>
+      <div class="line">Magnet — pull and tension.</div>
+      <div class="line highlight">Safe — trust and vulnerability.</div>
+      <div class="line">Pretty & Petty — sharp wit and self-defense.</div>
+      <div class="line">Outside — freedom and motion.</div>
+      <div class="line highlight">Trophies — winning and receipts.</div>
+      <div class="line">Up — momentum and lift.</div>
+      <div class="line">WAP — swagger and cultural impact.</div>
+    </div>
+  </div>
+</body>
+</html>
+
+React
+import React, { useEffect, useRef } from "react";
+
+export default function DramaTracks({ tracks = [], currentIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentIndex];
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {tracks.map((item, i) => {
+        const active = i === currentIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ff4d8d" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65
+            }}
+          >
+            {item.track} — {item.theme}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+
