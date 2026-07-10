@@ -1,0 +1,611 @@
+java script
+function toyStory5Theme() {
+  let childhood = true;
+  let jessie = "cowgirl spirit";
+  let feeling = "nostalgia";
+  let journey = "growing up but staying brave";
+
+  console.log("Verse: I knew you in the days of grass, games, and summer skies.");
+  console.log("Pre-Chorus: We were smaller then, but the feeling was already there.");
+  console.log("Chorus: I knew it, I knew you — like a story that never let go.");
+  console.log("Verse: Time changed the world, but not the heart of the bond.");
+  console.log("Bridge: Hold on to the light, the memory, and the ride.");
+  console.log("Outro: A childhood chapter that still sings.");
+}
+
+toyStory5Theme();
+
+python
+def toy_story_5_theme():
+    lines = [
+        "I knew you in the days of grass, games, and summer skies.",
+        "We were smaller then, but the feeling was already there.",
+        "I knew it, I knew you — like a story that never let go.",
+        "Time changed the world, but not the heart of the bond.",
+        "Hold on to the light, the memory, and the ride.",
+        "A childhood chapter that still sings."
+    ]
+
+    for line in lines:
+        print(line)
+
+toy_story_5_theme()
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toy Story 5 Theme Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #14121f, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 90vw;
+      max-width: 760px;
+      height: 75vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.85);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .line {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      text-align: center;
+      margin: 14px 0;
+      opacity: 0.75;
+    }
+    .active {
+      color: #ffd966;
+      font-size: 1.55rem;
+      font-weight: bold;
+      opacity: 1;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #7df9ff;
+      margin-bottom: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">I Knew It, I Knew You</div>
+    <div class="line">I knew you in the days of grass and summer skies.</div>
+    <div class="line active">I knew it, I knew you.</div>
+    <div class="line">We were smaller then, but the feeling was there.</div>
+    <div class="line">Time changed the world.</div>
+    <div class="line active">Hold on to the light, the memory, and the ride.</div>
+    <div class="line">A childhood chapter that still sings.</div>
+  </div>
+</body>
+</html>
+
+react
+import React, { useEffect, useRef } from "react";
+
+export default function ToyStoryLyricViewer({
+  lines = [],
+  currentLineIndex = 0,
+}) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentLineIndex];
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [currentLineIndex]);
+
+  return (
+    <div
+      style={{
+        height: "70vh",
+        overflowY: "auto",
+        padding: "24px",
+        background: "#0b0b0b",
+        borderRadius: "16px",
+        border: "1px solid #333",
+      }}
+    >
+      {lines.map((line, i) => {
+        const active = i === currentLineIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: "10px",
+              textAlign: "center",
+              transition: "all 0.25s ease",
+              background: active ? "#ffd966" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65,
+            }}
+          >
+            {line}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+beat time karaoke
+[0:00] I knew you in the days of grass and summer skies.
+[0:04] We were smaller then, but the feeling was already there.
+[0:08] I knew it, I knew you.
+[0:12] Like a story that never let go.
+[0:16] Time changed the world, but not the heart of the bond.
+[0:20] Hold on to the light, the memory, and the ride.
+[0:24] A childhood chapter that still sings.
+
+react beat player
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "I knew you in the days of grass and summer skies." },
+  { time: 4000, text: "We were smaller then, but the feeling was already there." },
+  { time: 8000, text: "I knew it, I knew you." },
+  { time: 12000, text: "Like a story that never let go." },
+  { time: 16000, text: "Time changed the world, but not the heart of the bond." },
+  { time: 20000, text: "Hold on to the light, the memory, and the ride." },
+  { time: 24000, text: "A childhood chapter that still sings." },
+];
+
+export default function KaraokePlayer() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/your-song-file.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+full screen animated
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toy Story 5 Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #1a1730, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 780px;
+      height: 78vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      position: relative;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 16px;
+      color: #7df9ff;
+    }
+    .line {
+      text-align: center;
+      margin: 14px 0;
+      padding: 12px 16px;
+      border-radius: 10px;
+      opacity: 0.6;
+      transition: 0.25s ease;
+      font-size: 1.25rem;
+    }
+    .active {
+      opacity: 1;
+      background: #ffd966;
+      color: #111;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">I Knew It, I Knew You</div>
+    <div class="line active">I knew you in the days of grass and summer skies.</div>
+    <div class="line">We were smaller then, but the feeling was already there.</div>
+    <div class="line">I knew it, I knew you.</div>
+    <div class="line">Like a story that never let go.</div>
+    <div class="line">Time changed the world, but not the heart of the bond.</div>
+    <div class="line">Hold on to the light, the memory, and the ride.</div>
+    <div class="line">A childhood chapter that still sings.</div>
+  </div>
+</body>
+</html>
+
+javascript
+const toyStory5Songs = [
+  "I Knew It, I Knew You",
+  "Other Side",
+  "Victory",
+  "Bad Energy",
+  "The Ballad of the Lonesome Cowboy",
+  "Wonderland",
+  "3’s",
+  "You've Got a Friend in Me",
+  "Lead the Way",
+  "Strange Things",
+  "Intuition",
+  "Trips",
+  "When She Loved Me",
+  "Island",
+  "I Can't Let You Throw Yourself Away",
+  "Only One",
+  "We Belong Together",
+  "Home",
+  "Higher",
+  "Woody's Roundup",
+  "Back to You",
+  "The Ballad of the Lonesome Cowboy (Soundtrack Version)",
+  "Time",
+  "Infinity and Beyond",
+  "You've Got a Friend in Me - Duet",
+  "Lush Life",
+  "As It Was",
+  "Flowers",
+  "WHERE IS MY HUSBAND!"
+];
+
+toyStory5Songs.forEach((song, i) => {
+  console.log(`${i + 1}. ${song} -> friendship, growth, adventure, and nostalgia`);
+});
+
+taylor swift
+function iKnewItIKnewYouTheme() {
+  console.log("Verse: I knew you in the summer light, where childhood felt endless.");
+  console.log("Pre-Chorus: The years moved on, but the bond stayed true.");
+  console.log("Chorus: I knew it, I knew you — like a memory that still sings.");
+  console.log("Bridge: Growing up doesn't break the thread.");
+  console.log("Outro: Some stories stay with us forever.");
+}
+
+iKnewItIKnewYouTheme();
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toy Story 5 Soundtrack Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #16122a, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 820px;
+      height: 78vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #7df9ff;
+      margin-bottom: 16px;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #ffd966;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">I Knew It, I Knew You</div>
+    <div class="line">I knew you in the summer light.</div>
+    <div class="line active">I knew it, I knew you.</div>
+    <div class="line">The years moved on, but the bond stayed true.</div>
+    <div class="line">Some stories stay with us forever.</div>
+  </div>
+</body>
+</html>
+
+react
+import React, { useEffect, useRef } from "react";
+
+export default function SoundtrackLyrics({ lines = [], currentLineIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentLineIndex];
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [currentLineIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {lines.map((line, i) => {
+        const active = i === currentLineIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ffd966" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65
+            }}
+          >
+            {line}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+java script
+const toyStory5Tracks = [
+  "I Knew It, I Knew You",
+  "It's Good To Be Back",
+  "Star Mode On",
+  "Not My Fault",
+  "My Best Friend",
+  "To Infinity and Beyond",
+  "Try My Best",
+  "Hi, Lets Play",
+  "I Will Always Standby You",
+  "Wild and Free",
+  "Cooler Than A Screen",
+  "Don't Forget The Fun",
+  "Reach For The Sky"
+];
+
+toyStory5Tracks.forEach((track, i) => {
+  console.log(`${i + 1}. ${track} -> friendship, growth, adventure, nostalgia`);
+});
+
+taylor swift
+function iKnewItIKnewYouTheme() {
+  console.log("Verse: I knew you in the light of childhood wonder.");
+  console.log("Pre-Chorus: Time moved on, but the bond stayed close.");
+  console.log("Chorus: I knew it, I knew you — like a memory that lasts.");
+  console.log("Bridge: Growing up does not mean letting go.");
+  console.log("Outro: Some stories stay with us forever.");
+}
+
+iKnewItIKnewYouTheme();
+
+react
+import React, { useEffect, useRef } from "react";
+
+export default function LyricsViewer({ lines = [], currentLineIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentLineIndex];
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [currentLineIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {lines.map((line, i) => {
+        const active = i === currentLineIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#ffd966" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65,
+              transition: "all 0.25s ease"
+            }}
+          >
+            {line}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+example usage
+import React, { useEffect, useState } from "react";
+import LyricsViewer from "./LyricsViewer";
+
+const lines = [
+  "I knew you in the light of childhood wonder.",
+  "Time moved on, but the bond stayed close.",
+  "I knew it, I knew you.",
+  "Growing up does not mean letting go.",
+  "Some stories stay with us forever."
+];
+
+export default function App() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentLineIndex((i) => (i + 1) % lines.length);
+    }, 2500);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", minHeight: "100vh" }}>
+      <LyricsViewer lines={lines} currentLineIndex={currentLineIndex} />
+    </div>
+  );
+}
+
+Html lyric
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toy Story 5 Lyrics</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #16122a, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 820px;
+      height: 78vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #7df9ff;
+      margin-bottom: 16px;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #ffd966;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">I Knew It, I Knew You</div>
+    <div class="line">I knew you in the light of childhood wonder.</div>
+    <div class="line active">I knew it, I knew you.</div>
+    <div class="line">Time moved on, but the bond stayed close.</div>
+    <div class="line">Growing up does not mean letting go.</div>
+    <div class="line">Some stories stay with us forever.</div>
+  </div>
+</body>
+</html>
+
