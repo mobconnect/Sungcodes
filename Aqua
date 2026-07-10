@@ -107,4 +107,14 @@ export default function BarbieGirlChorus() {
     </Card>
   );
 }
+# Print the Barbie Girl chorus
+def sing_barbie_song():
+    is_party_time = True
+
+    while is_party_time:
+        print("Come on, Barbie, let's go party!")
+        print("Ah, ah, ah, yeah!")
+
+sing_barbie_song()
+
 
