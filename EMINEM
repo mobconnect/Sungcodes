@@ -1,0 +1,1947 @@
+function godzillaTheme() {
+  console.log("Verse: switching from calm to chaos.");
+  console.log("Hook: a monster wakes up inside the rhyme.");
+  console.log("Verse: rapid-fire delivery, pressure, and control.");
+  console.log("Bridge: the energy keeps climbing until it breaks loose.");
+  console.log("Outro: look what he’s planning.");
+}
+
+godzillaTheme();
+
+python
+def godzilla_theme():
+    lines = [
+        "Switching from calm to chaos.",
+        "A monster wakes up inside the rhyme.",
+        "Rapid-fire delivery, pressure, and control.",
+        "The energy keeps climbing until it breaks loose.",
+        "Look what he's planning."
+    ]
+    for line in lines:
+        print(line)
+
+godzilla_theme()
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Godzilla Code</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #15151d, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 90vw;
+      max-width: 760px;
+      height: 75vh;
+      border: 2px solid #7df9ff;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #ffd966;
+      margin-bottom: 16px;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #7df9ff;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="title">Godzilla</div>
+    <div class="line">Switching from calm to chaos.</div>
+    <div class="line active">A monster wakes up inside the rhyme.</div>
+    <div class="line">Rapid-fire delivery, pressure, and control.</div>
+    <div class="line">The energy keeps climbing until it breaks loose.</div>
+    <div class="line">Look what he’s planning.</div>
+  </div>
+</body>
+</html>
+
+React
+import React, { useEffect, useRef } from "react";
+
+export default function GodzillaViewer({ lines = [], currentLineIndex = 0 }) {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const el = refs.current[currentLineIndex];
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentLineIndex]);
+
+  return (
+    <div style={{
+      height: "70vh",
+      overflowY: "auto",
+      padding: 24,
+      background: "#0b0b0b",
+      borderRadius: 16,
+      border: "1px solid #333"
+    }}>
+      {lines.map((line, i) => {
+        const active = i === currentLineIndex;
+        return (
+          <div
+            key={i}
+            ref={(el) => (refs.current[i] = el)}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: active ? "#7df9ff" : "transparent",
+              color: active ? "#111" : "#fff",
+              fontWeight: active ? 700 : 400,
+              opacity: active ? 1 : 0.65
+            }}
+          >
+            {line}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+beat timing
+[0:00] Calm before the storm.
+[0:04] Something monstrous is waking up.
+[0:08] The pressure builds.
+[0:12] The voice gets faster.
+[0:16] The verse starts to run wild.
+[0:20] Every bar hits harder.
+[0:24] The final burst of speed lands.
+[0:28] The monster is fully unleashed.
+
+javascript karaoke timer
+
+const lines = [
+  { time: 0, text: "Calm before the storm." },
+  { time: 4000, text: "Something monstrous is waking up." },
+  { time: 8000, text: "The pressure builds." },
+  { time: 12000, text: "The voice gets faster." },
+  { time: 16000, text: "The verse starts to run wild." },
+  { time: 20000, text: "Every bar hits harder." },
+  { time: 24000, text: "The final burst of speed lands." },
+  { time: 28000, text: "The monster is fully unleashed." }
+];
+
+function syncLines(currentMs) {
+  let index = 0;
+  for (let i = 0; i < lines.length; i++) {
+    if (currentMs >= lines[i].time) index = i;
+  }
+  return index;
+}
+
+React 
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "Calm before the storm." },
+  { time: 4000, text: "Something monstrous is waking up." },
+  { time: 8000, text: "The pressure builds." },
+  { time: 12000, text: "The voice gets faster." },
+  { time: 16000, text: "The verse starts to run wild." },
+  { time: 20000, text: "Every bar hits harder." },
+  { time: 24000, text: "The final burst of speed lands." },
+  { time: 28000, text: "The monster is fully unleashed." }
+];
+
+export default function GodzillaKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/godzilla.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#7df9ff" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Godzilla Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #14141c, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 780px;
+      height: 78vh;
+      border: 2px solid #7df9ff;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #7df9ff;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="line active">Calm before the storm.</div>
+    <div class="line">Something monstrous is waking up.</div>
+    <div class="line">The pressure builds.</div>
+    <div class="line">The voice gets faster.</div>
+    <div class="line">The verse starts to run wild.</div>
+    <div class="line">Every bar hits harder.</div>
+    <div class="line">The final burst of speed lands.</div>
+    <div class="line">The monster is fully unleashed.</div>
+  </div>
+</body>
+</html>
+
+beat map
+[0:00] One moment, one chance.
+[0:05] Nerves rise before the first step.
+[0:10] The pressure builds in the room.
+[0:15] The opportunity is now.
+[0:20] Doubt starts to fade.
+[0:25] The energy turns into momentum.
+[0:30] No turning back now.
+[0:35] The breakthrough arrives.
+
+javascript
+const lines = [
+  { time: 0, text: "One moment, one chance." },
+  { time: 5000, text: "Nerves rise before the first step." },
+  { time: 10000, text: "The pressure builds in the room." },
+  { time: 15000, text: "The opportunity is now." },
+  { time: 20000, text: "Doubt starts to fade." },
+  { time: 25000, text: "The energy turns into momentum." },
+  { time: 30000, text: "No turning back now." },
+  { time: 35000, text: "The breakthrough arrives." }
+];
+
+function currentLineIndex(ms) {
+  let index = 0;
+  for (let i = 0; i < lines.length; i++) {
+    if (ms >= lines[i].time) index = i;
+  }
+  return index;
+}
+
+React 
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "One moment, one chance." },
+  { time: 5000, text: "Nerves rise before the first step." },
+  { time: 10000, text: "The pressure builds in the room." },
+  { time: 15000, text: "The opportunity is now." },
+  { time: 20000, text: "Doubt starts to fade." },
+  { time: 25000, text: "The energy turns into momentum." },
+  { time: 30000, text: "No turning back now." },
+  { time: 35000, text: "The breakthrough arrives." }
+];
+
+export default function LoseYourselfKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/lose-yourself.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lose Yourself Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #151515, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 780px;
+      height: 78vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #ffd966;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="line active">One moment, one chance.</div>
+    <div class="line">Nerves rise before the first step.</div>
+    <div class="line">The pressure builds in the room.</div>
+    <div class="line">The opportunity is now.</div>
+    <div class="line">Doubt starts to fade.</div>
+    <div class="line">The energy turns into momentum.</div>
+    <div class="line">No turning back now.</div>
+    <div class="line">The breakthrough arrives.</div>
+  </div>
+</body>
+</html>
+
+function soldierTheme() {
+  console.log("Verse: I came through pressure and kept moving.");
+  console.log("Chorus: I stand my ground, no matter the heat.");
+  console.log("Verse: every challenge makes me tougher.");
+  console.log("Bridge: the fight is part of the story.");
+  console.log("Outro: I’m still here, still standing.");
+}
+
+soldierTheme();
+
+python
+def soldier_theme():
+    lines = [
+        "I came through pressure and kept moving.",
+        "I stand my ground, no matter the heat.",
+        "Every challenge makes me tougher.",
+        "The fight is part of the story.",
+        "I’m still here, still standing."
+    ]
+    for line in lines:
+        print(line)
+
+soldier_theme()
+
+beat timer karaoke
+[0:00] Pressure comes in.
+[0:04] Stay steady.
+[0:08] Keep walking forward.
+[0:12] No backing down.
+[0:16] The fight gets louder.
+[0:20] Strength takes over.
+[0:24] Still standing.
+[0:28] Still here.
+
+React 
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "Pressure comes in." },
+  { time: 4000, text: "Stay steady." },
+  { time: 8000, text: "Keep walking forward." },
+  { time: 12000, text: "No backing down." },
+  { time: 16000, text: "The fight gets louder." },
+  { time: 20000, text: "Strength takes over." },
+  { time: 24000, text: "Still standing." },
+  { time: 28000, text: "Still here." }
+];
+
+export default function SoldierKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/soldier.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+beat 
+[0:00] Old conflicts echo.
+[0:05] The weight of the fallout hangs in the air.
+[0:10] The message turns reflective.
+[0:15] The cost of beef becomes clear.
+[0:20] Voices rise, but so does regret.
+[0:25] The warning lands.
+[0:30] The cycle needs to stop.
+[0:35] The room goes quiet.
+
+Javascript
+function likeToySoldiersTheme() {
+  console.log("Old conflicts echo.");
+  console.log("The weight of the fallout hangs in the air.");
+  console.log("The message turns reflective.");
+  console.log("The cost of beef becomes clear.");
+  console.log("Voices rise, but so does regret.");
+  console.log("The warning lands.");
+  console.log("The cycle needs to stop.");
+  console.log("The room goes quiet.");
+}
+
+likeToySoldiersTheme();
+
+python
+def like_toy_soldiers_theme():
+    lines = [
+        "Old conflicts echo.",
+        "The weight of the fallout hangs in the air.",
+        "The message turns reflective.",
+        "The cost of beef becomes clear.",
+        "Voices rise, but so does regret.",
+        "The warning lands.",
+        "The cycle needs to stop.",
+        "The room goes quiet."
+    ]
+    for line in lines:
+        print(line)
+
+like_toy_soldiers_theme()
+
+React
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "Old conflicts echo." },
+  { time: 4000, text: "The weight of the fallout hangs in the air." },
+  { time: 8000, text: "The message turns reflective." },
+  { time: 12000, text: "The cost of beef becomes clear." },
+  { time: 16000, text: "Voices rise, but so does regret." },
+  { time: 20000, text: "The warning lands." },
+  { time: 24000, text: "The cycle needs to stop." },
+  { time: 28000, text: "The room goes quiet." }
+];
+
+export default function LikeToySoldiersKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/like-toy-soldiers.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#7df9ff" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Like Toy Soldiers Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #161622, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 780px;
+      height: 78vh;
+      border: 2px solid #7df9ff;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #7df9ff;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="line active">Old conflicts echo.</div>
+    <div class="line">The weight of the fallout hangs in the air.</div>
+    <div class="line">The message turns reflective.</div>
+    <div class="line">The cost of beef becomes clear.</div>
+    <div class="line">Voices rise, but so does regret.</div>
+    <div class="line">The warning lands.</div>
+    <div class="line">The cycle needs to stop.</div>
+    <div class="line">The room goes quiet.</div>
+  </div>
+</body>
+</html>
+
+Beat time karaoke
+[0:00] A promise to a daughter.
+[0:05] Hard times and broken plans.
+[0:10] A father tries to explain the past.
+[0:15] The world feels heavy.
+[0:20] Comfort becomes the message.
+[0:25] Hope stays alive.
+[0:30] Love is the only thing left to give.
+[0:35] The lullaby carries on.
+
+Javascript
+function mockingbirdTheme() {
+  console.log("A promise to a daughter.");
+  console.log("Hard times and broken plans.");
+  console.log("A father tries to explain the past.");
+  console.log("The world feels heavy.");
+  console.log("Comfort becomes the message.");
+  console.log("Hope stays alive.");
+  console.log("Love is the only thing left to give.");
+  console.log("The lullaby carries on.");
+}
+
+mockingbirdTheme();
+
+python
+def mockingbird_theme():
+    lines = [
+        "A promise to a daughter.",
+        "Hard times and broken plans.",
+        "A father tries to explain the past.",
+        "The world feels heavy.",
+        "Comfort becomes the message.",
+        "Hope stays alive.",
+        "Love is the only thing left to give.",
+        "The lullaby carries on."
+    ]
+    for line in lines:
+        print(line)
+
+mockingbird_theme()
+
+React component
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "A promise to a daughter." },
+  { time: 4000, text: "Hard times and broken plans." },
+  { time: 8000, text: "A father tries to explain the past." },
+  { time: 12000, text: "The world feels heavy." },
+  { time: 16000, text: "Comfort becomes the message." },
+  { time: 20000, text: "Hope stays alive." },
+  { time: 24000, text: "Love is the only thing left to give." },
+  { time: 28000, text: "The lullaby carries on." }
+];
+
+export default function MockingbirdKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/mockingbird.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mockingbird Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #1a1522, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 780px;
+      height: 78vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #ffd966;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="line active">A promise to a daughter.</div>
+    <div class="line">Hard times and broken plans.</div>
+    <div class="line">A father tries to explain the past.</div>
+    <div class="line">The world feels heavy.</div>
+    <div class="line">Comfort becomes the message.</div>
+    <div class="line">Hope stays alive.</div>
+    <div class="line">Love is the only thing left to give.</div>
+    <div class="line">The lullaby carries on.</div>
+  </div>
+</body>
+</html>
+
+beat time karaoke
+[0:00] Old pain comes back.
+[0:05] The past is still loud.
+[0:10] Family wounds are reopened.
+[0:15] Anger turns into confession.
+[0:20] The truth hits hard.
+[0:25] Regret and rage collide.
+[0:30] The voice gets sharper.
+[0:35] The closet is emptied out.
+
+Javascript
+function cleaninOutMyClosetTheme() {
+  console.log("Old pain comes back.");
+  console.log("The past is still loud.");
+  console.log("Family wounds are reopened.");
+  console.log("Anger turns into confession.");
+  console.log("The truth hits hard.");
+  console.log("Regret and rage collide.");
+  console.log("The voice gets sharper.");
+  console.log("The closet is emptied out.");
+}
+
+cleaninOutMyClosetTheme();
+
+Python
+def cleanin_out_my_closet_theme():
+    lines = [
+        "Old pain comes back.",
+        "The past is still loud.",
+        "Family wounds are reopened.",
+        "Anger turns into confession.",
+        "The truth hits hard.",
+        "Regret and rage collide.",
+        "The voice gets sharper.",
+        "The closet is emptied out."
+    ]
+    for line in lines:
+        print(line)
+
+cleanin_out_my_closet_theme()
+
+React
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "Old pain comes back." },
+  { time: 4000, text: "The past is still loud." },
+  { time: 8000, text: "Family wounds are reopened." },
+  { time: 12000, text: "Anger turns into confession." },
+  { time: 16000, text: "The truth hits hard." },
+  { time: 20000, text: "Regret and rage collide." },
+  { time: 24000, text: "The voice gets sharper." },
+  { time: 28000, text: "The closet is emptied out." }
+];
+
+export default function ClosetKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/cleanin-out-my-closet.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleanin' Out My Closet Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #18131d, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 780px;
+      height: 78vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #ffd966;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="line active">Old pain comes back.</div>
+    <div class="line">The past is still loud.</div>
+    <div class="line">Family wounds are reopened.</div>
+    <div class="line">Anger turns into confession.</div>
+    <div class="line">The truth hits hard.</div>
+    <div class="line">Regret and rage collide.</div>
+    <div class="line">The voice gets sharper.</div>
+    <div class="line">The closet is emptied out.</div>
+  </div>
+</body>
+</html>
+
+[0:00] A parent speaks from the edge of leaving.
+[0:05] The room feels smaller and quieter.
+[0:10] Love and guilt are tangled together.
+[0:15] A child is the center of every thought.
+[0:20] The words try to explain the pain.
+[0:25] Regret sits beside hope.
+[0:30] What’s left is a promise.
+[0:35] The voice fades, but the care stays.
+
+function whenImGoneTheme() {
+  console.log("A parent speaks from the edge of leaving.");
+  console.log("The room feels smaller and quieter.");
+  console.log("Love and guilt are tangled together.");
+  console.log("A child is the center of every thought.");
+  console.log("The words try to explain the pain.");
+  console.log("Regret sits beside hope.");
+  console.log("What’s left is a promise.");
+  console.log("The voice fades, but the care stays.");
+}
+
+whenImGoneTheme();
+
+python
+def when_im_gone_theme():
+    lines = [
+        "A parent speaks from the edge of leaving.",
+        "The room feels smaller and quieter.",
+        "Love and guilt are tangled together.",
+        "A child is the center of every thought.",
+        "The words try to explain the pain.",
+        "Regret sits beside hope.",
+        "What's left is a promise.",
+        "The voice fades, but the care stays."
+    ]
+    for line in lines:
+        print(line)
+
+when_im_gone_theme()
+
+React
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "A parent speaks from the edge of leaving." },
+  { time: 4000, text: "The room feels smaller and quieter." },
+  { time: 8000, text: "Love and guilt are tangled together." },
+  { time: 12000, text: "A child is the center of every thought." },
+  { time: 16000, text: "The words try to explain the pain." },
+  { time: 20000, text: "Regret sits beside hope." },
+  { time: 24000, text: "What's left is a promise." },
+  { time: 28000, text: "The voice fades, but the care stays." }
+];
+
+export default function WhenImGoneKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/when-im-gone.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When I'm Gone Karaoke</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #18131d, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .screen {
+      width: 92vw;
+      max-width: 780px;
+      height: 78vh;
+      border: 2px solid #ffd966;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.88);
+      padding: 24px;
+      overflow: hidden;
+    }
+    .line {
+      text-align: center;
+      margin: 12px 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      opacity: 0.7;
+      font-size: 1.15rem;
+    }
+    .active {
+      background: #ffd966;
+      color: #111;
+      opacity: 1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="line active">A parent speaks from the edge of leaving.</div>
+    <div class="line">The room feels smaller and quieter.</div>
+    <div class="line">Love and guilt are tangled together.</div>
+    <div class="line">A child is the center of every thought.</div>
+    <div class="line">The words try to explain the pain.</div>
+    <div class="line">Regret sits beside hope.</div>
+    <div class="line">What's left is a promise.</div>
+    <div class="line">The voice fades, but the care stays.</div>
+  </div>
+</body>
+</html>
+
+Safe Karaoke
+[0:00] A messy relationship starts to unravel.
+[0:05] Two voices push and pull against each other.
+[0:10] The mood turns tense and emotional.
+[0:15] Apologies and anger collide.
+[0:20] The story becomes personal.
+[0:25] Trust slips, then cracks.
+[0:30] The fallout hangs in the air.
+
+code version
+function niceGuyTheme() {
+  console.log("A messy relationship starts to unravel.");
+  console.log("Two voices push and pull against each other.");
+  console.log("The mood turns tense and emotional.");
+  console.log("Apologies and anger collide.");
+  console.log("The story becomes personal.");
+  console.log("Trust slips, then cracks.");
+  console.log("The fallout hangs in the air.");
+}
+
+niceGuyTheme();
+
+
+React version
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "A messy relationship starts to unravel." },
+  { time: 4000, text: "Two voices push and pull against each other." },
+  { time: 8000, text: "The mood turns tense and emotional." },
+  { time: 12000, text: "Apologies and anger collide." },
+  { time: 16000, text: "The story becomes personal." },
+  { time: 20000, text: "Trust slips, then cracks." },
+  { time: 24000, text: "The fallout hangs in the air." }
+];
+
+export default function NiceGuyKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/nice-guy.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+good guy 
+[0:00] The tension carries over.
+[0:05] Two people keep circling the same hurt.
+[0:10] One voice stays defensive.
+[0:15] The other keeps pressing in.
+[0:20] The mood turns darker.
+[0:25] The truth feels close.
+[0:30] The relationship starts to break apart.
+
+Java scipt
+function goodGuyTheme() {
+  console.log("The tension carries over.");
+  console.log("Two people keep circling the same hurt.");
+  console.log("One voice stays defensive.");
+  console.log("The other keeps pressing in.");
+  console.log("The mood turns darker.");
+  console.log("The truth feels close.");
+  console.log("The relationship starts to break apart.");
+}
+
+goodGuyTheme();
+
+python
+def good_guy_theme():
+    lines = [
+        "The tension carries over.",
+        "Two people keep circling the same hurt.",
+        "One voice stays defensive.",
+        "The other keeps pressing in.",
+        "The mood turns darker.",
+        "The truth feels close.",
+        "The relationship starts to break apart."
+    ]
+    for line in lines:
+        print(line)
+
+good_guy_theme()
+
+React
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "The tension carries over." },
+  { time: 4000, text: "Two people keep circling the same hurt." },
+  { time: 8000, text: "One voice stays defensive." },
+  { time: 12000, text: "The other keeps pressing in." },
+  { time: 16000, text: "The mood turns darker." },
+  { time: 20000, text: "The truth feels close." },
+  { time: 24000, text: "The relationship starts to break apart." }
+];
+
+export default function GoodGuyKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/good-guy.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+eminem and 50
+[0:00] Two heavyweights set the tone.
+[0:05] The tension is already in the room.
+[0:10] Confidence meets patience.
+[0:15] Every line comes with pressure.
+[0:20] The energy stays sharp.
+[0:25] The message is clear.
+[0:30] Nobody’s backing down.
+[0:35] The moment finally lands.
+
+Javascript
+function patientlyWaitingTheme() {
+  console.log("Two heavyweights set the tone.");
+  console.log("The tension is already in the room.");
+  console.log("Confidence meets patience.");
+  console.log("Every line comes with pressure.");
+  console.log("The energy stays sharp.");
+  console.log("The message is clear.");
+  console.log("Nobody's backing down.");
+  console.log("The moment finally lands.");
+}
+
+patientlyWaitingTheme();
+
+python
+def patiently_waiting_theme():
+    lines = [
+        "Two heavyweights set the tone.",
+        "The tension is already in the room.",
+        "Confidence meets patience.",
+        "Every line comes with pressure.",
+        "The energy stays sharp.",
+        "The message is clear.",
+        "Nobody's backing down.",
+        "The moment finally lands."
+    ]
+    for line in lines:
+        print(line)
+
+patiently_waiting_theme()
+
+React
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "Two heavyweights set the tone." },
+  { time: 4000, text: "The tension is already in the room." },
+  { time: 8000, text: "Confidence meets patience." },
+  { time: 12000, text: "Every line comes with pressure." },
+  { time: 16000, text: "The energy stays sharp." },
+  { time: 20000, text: "The message is clear." },
+  { time: 24000, text: "Nobody's backing down." },
+  { time: 28000, text: "The moment finally lands." }
+];
+
+export default function PatientlyWaitingKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/patiently-waiting.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+karaoke
+[0:00] Pressure, pride, and survival.
+[0:05] The past still follows close.
+[0:10] Every choice carries weight.
+[0:15] The fight is personal.
+[0:20] The energy stays defiant.
+[0:25] Fame and struggle collide.
+[0:30] The message turns bold.
+[0:35] Keep moving forward.
+
+Javascript
+function myLifeTheme() {
+  console.log("Pressure, pride, and survival.");
+  console.log("The past still follows close.");
+  console.log("Every choice carries weight.");
+  console.log("The fight is personal.");
+  console.log("The energy stays defiant.");
+  console.log("Fame and struggle collide.");
+  console.log("The message turns bold.");
+  console.log("Keep moving forward.");
+}
+
+myLifeTheme();
+
+Python
+def my_life_theme():
+    lines = [
+        "Pressure, pride, and survival.",
+        "The past still follows close.",
+        "Every choice carries weight.",
+        "The fight is personal.",
+        "The energy stays defiant.",
+        "Fame and struggle collide.",
+        "The message turns bold.",
+        "Keep moving forward."
+    ]
+    for line in lines:
+        print(line)
+
+my_life_theme()
+
+React 
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "Pressure, pride, and survival." },
+  { time: 4000, text: "The past still follows close." },
+  { time: 8000, text: "Every choice carries weight." },
+  { time: 12000, text: "The fight is personal." },
+  { time: 16000, text: "The energy stays defiant." },
+  { time: 20000, text: "Fame and struggle collide." },
+  { time: 24000, text: "The message turns bold." },
+  { time: 28000, text: "Keep moving forward." }
+];
+
+export default function MyLifeKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/my-life.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+Beat time 
+[0:00] The energy starts to build.
+[0:05] Something sharp is about to happen.
+[0:10] The room shifts colder.
+[0:15] The pace gets quicker.
+[0:20] Confidence turns into momentum.
+[0:25] The warning is loud.
+[0:30] The moment explodes.
+[0:35] No one is standing still.
+
+Javascript
+function crackABottleTheme() {
+  console.log("The energy starts to build.");
+  console.log("Something sharp is about to happen.");
+  console.log("The room shifts colder.");
+  console.log("The pace gets quicker.");
+  console.log("Confidence turns into momentum.");
+  console.log("The warning is loud.");
+  console.log("The moment explodes.");
+  console.log("No one is standing still.");
+}
+
+crackABottleTheme();
+
+Python
+def crack_a_bottle_theme():
+    lines = [
+        "The energy starts to build.",
+        "Something sharp is about to happen.",
+        "The room shifts colder.",
+        "The pace gets quicker.",
+        "Confidence turns into momentum.",
+        "The warning is loud.",
+        "The moment explodes.",
+        "No one is standing still."
+    ]
+    for line in lines:
+        print(line)
+
+crack_a_bottle_theme()
+
+
+React
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "The energy starts to build." },
+  { time: 4000, text: "Something sharp is about to happen." },
+  { time: 8000, text: "The room shifts colder." },
+  { time: 12000, text: "The pace gets quicker." },
+  { time: 16000, text: "Confidence turns into momentum." },
+  { time: 20000, text: "The warning is loud." },
+  { time: 24000, text: "The moment explodes." },
+  { time: 28000, text: "No one is standing still." }
+];
+
+export default function CrackABottleKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/crack-a-bottle.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+karaoke
+[0:00] A lonely mood sets in.
+[0:05] A fan’s letters go unanswered.
+[0:10] The obsession grows louder.
+[0:15] The story turns darker.
+[0:20] Regret starts to show.
+[0:25] The warning comes too late.
+[0:30] The tension breaks.
+[0:35] The ending lands hard.
+
+Javascript
+function stanTheme() {
+  console.log("A lonely mood sets in.");
+  console.log("A fan’s letters go unanswered.");
+  console.log("The obsession grows louder.");
+  console.log("The story turns darker.");
+  console.log("Regret starts to show.");
+  console.log("The warning comes too late.");
+  console.log("The tension breaks.");
+  console.log("The ending lands hard.");
+}
+
+stanTheme();
+
+Python
+def stan_theme():
+    lines = [
+        "A lonely mood sets in.",
+        "A fan’s letters go unanswered.",
+        "The obsession grows louder.",
+        "The story turns darker.",
+        "Regret starts to show.",
+        "The warning comes too late.",
+        "The tension breaks.",
+        "The ending lands hard."
+    ]
+    for line in lines:
+        print(line)
+
+stan_theme()
+
+
+
+React
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "A lonely mood sets in." },
+  { time: 4000, text: "A fan’s letters go unanswered." },
+  { time: 8000, text: "The obsession grows louder." },
+  { time: 12000, text: "The story turns darker." },
+  { time: 16000, text: "Regret starts to show." },
+  { time: 20000, text: "The warning comes too late." },
+  { time: 24000, text: "The tension breaks." },
+  { time: 28000, text: "The ending lands hard." }
+];
+
+export default function StanKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/stan.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+karaoke
+[0:00] The group walks in with swagger.
+[0:05] The spotlight keeps landing on one person.
+[0:10] The others act annoyed and competitive.
+[0:15] Fame turns into a running joke.
+[0:20] The tension stays funny, not serious.
+[0:25] Everyone wants credit.
+[0:30] The crowd keeps guessing wrong.
+[0:35] The joke lands again.
+
+Javascript
+function myBandTheme() {
+  console.log("The group walks in with swagger.");
+  console.log("The spotlight keeps landing on one person.");
+  console.log("The others act annoyed and competitive.");
+  console.log("Fame turns into a running joke.");
+  console.log("The tension stays funny, not serious.");
+  console.log("Everyone wants credit.");
+  console.log("The crowd keeps guessing wrong.");
+  console.log("The joke lands again.");
+}
+
+myBandTheme();
+
+python
+def my_band_theme():
+    lines = [
+        "The group walks in with swagger.",
+        "The spotlight keeps landing on one person.",
+        "The others act annoyed and competitive.",
+        "Fame turns into a running joke.",
+        "The tension stays funny, not serious.",
+        "Everyone wants credit.",
+        "The crowd keeps guessing wrong.",
+        "The joke lands again."
+    ]
+    for line in lines:
+        print(line)
+
+my_band_theme()
+
+safe
+[0:00] A memory from school comes back hard.
+[0:05] The mood turns hostile and chaotic.
+[0:10] Old bullying is turned into a story.
+[0:15] The pressure builds with every bar.
+[0:20] Anger and exaggeration mix together.
+[0:25] The scene gets more intense.
+[0:30] The punchline is dark.
+[0:35] The story ends with a warning.
+
+Javascript
+function brainDamageTheme() {
+  console.log("A memory from school comes back hard.");
+  console.log("The mood turns hostile and chaotic.");
+  console.log("Old bullying is turned into a story.");
+  console.log("The pressure builds with every bar.");
+  console.log("Anger and exaggeration mix together.");
+  console.log("The scene gets more intense.");
+  console.log("The punchline is dark.");
+  console.log("The story ends with a warning.");
+}
+
+brainDamageTheme();
+
+python
+def brain_damage_theme():
+    lines = [
+        "A memory from school comes back hard.",
+        "The mood turns hostile and chaotic.",
+        "Old bullying is turned into a story.",
+        "The pressure builds with every bar.",
+        "Anger and exaggeration mix together.",
+        "The scene gets more intense.",
+        "The punchline is dark.",
+        "The story ends with a warning."
+    ]
+    for line in lines:
+        print(line)
+
+brain_damage_theme()
+
+safe
+[0:00] The competition is loud.
+[0:05] Pressure turns into fuel.
+[0:10] Every verse tries to prove a point.
+[0:15] The tempo keeps climbing.
+[0:20] Confidence stays front and center.
+[0:25] The message is simple: keep up or fall behind.
+[0:30] The energy never lets go.
+
+code 
+function luckyYouTheme() {
+  console.log("The competition is loud.");
+  console.log("Pressure turns into fuel.");
+  console.log("Every verse tries to prove a point.");
+  console.log("The tempo keeps climbing.");
+  console.log("Confidence stays front and center.");
+  console.log("Keep up or fall behind.");
+  console.log("The energy never lets go.");
+}
+
+Java script
+function luckyYouTheme() {
+  console.log("The pressure is heavy.");
+  console.log("The pace comes in hot.");
+  console.log("Every line is a challenge.");
+  console.log("Confidence stays locked in.");
+  console.log("The competition keeps rising.");
+  console.log("The energy feels relentless.");
+  console.log("Nobody gets an easy win.");
+  console.log("The track keeps pushing forward.");
+}
+
+luckyYouTheme();
+
+Python
+def lucky_you_theme():
+    lines = [
+        "The pressure is heavy.",
+        "The pace comes in hot.",
+        "Every line is a challenge.",
+        "Confidence stays locked in.",
+        "The competition keeps rising.",
+        "The energy feels relentless.",
+        "Nobody gets an easy win.",
+        "The track keeps pushing forward."
+    ]
+    for line in lines:
+        print(line)
+
+lucky_you_theme()
+
+React
+import React, { useEffect, useState } from "react";
+
+const lines = [
+  { time: 0, text: "The pressure is heavy." },
+  { time: 4000, text: "The pace comes in hot." },
+  { time: 8000, text: "Every line is a challenge." },
+  { time: 12000, text: "Confidence stays locked in." },
+  { time: 16000, text: "The competition keeps rising." },
+  { time: 20000, text: "The energy feels relentless." },
+  { time: 24000, text: "Nobody gets an easy win." },
+  { time: 28000, text: "The track keeps pushing forward." }
+];
+
+export default function LuckyYouKaraoke() {
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const interval = setInterval(() => {
+      const t = audio?.currentTime ? audio.currentTime * 1000 : 0;
+      let index = 0;
+      for (let i = 0; i < lines.length; i++) {
+        if (t >= lines[i].time) index = i;
+      }
+      setCurrentLineIndex(index);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{ padding: 24, background: "#111", color: "#fff" }}>
+      <audio id="audio" controls src="/lucky-you.mp3" />
+      <div style={{ marginTop: 24, maxHeight: "60vh", overflowY: "auto" }}>
+        {lines.map((line, i) => (
+          <div
+            key={i}
+            style={{
+              padding: "12px 16px",
+              margin: "8px 0",
+              borderRadius: 10,
+              textAlign: "center",
+              background: i === currentLineIndex ? "#ffd966" : "#222",
+              color: i === currentLineIndex ? "#111" : "#fff",
+              fontWeight: i === currentLineIndex ? 700 : 400,
+              transition: "all 0.2s ease"
+            }}
+          >
+            {line.text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+[No Love]
+The mood is confrontational.
+The verses keep firing back.
+Pressure becomes motivation.
+The message is to stay standing.
+
+[Cinderella Man]
+The comeback starts from the bottom.
+Doubt turns into momentum.
+Every line pushes resilience.
+The finish feels triumphant.
+
+function noLoveTheme() {
+  console.log("The mood is confrontational.");
+  console.log("The verses keep firing back.");
+  console.log("Pressure becomes motivation.");
+  console.log("The message is to stay standing.");
+}
+
+function cinderellaManTheme() {
+  console.log("The comeback starts from the bottom.");
+  console.log("Doubt turns into momentum.");
+  console.log("Every line pushes resilience.");
+  console.log("The finish feels triumphant.");
+}
+
+[0:00] The doubt starts to fade.
+[0:05] The voice gets stronger.
+[0:10] Fear turns into movement.
+[0:15] The comeback becomes personal.
+[0:20] The message stays clear.
+[0:25] Keep going, even when it’s hard.
+[0:30] The track stands for resilience.
+
+javascript
+function notAfraidTheme() {
+  console.log("The doubt starts to fade.");
+  console.log("The voice gets stronger.");
+  console.log("Fear turns into movement.");
+  console.log("The comeback becomes personal.");
+  console.log("The message stays clear.");
+  console.log("Keep going, even when it's hard.");
+  console.log("The track stands for resilience.");
+}
+
+
+
