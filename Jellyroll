@@ -1,0 +1,151 @@
+Save me
+import React, { useState } from "react";
+
+export default function SaveMe() {
+  const [lyrics] = useState([
+    "The song is raw and exposed.",
+    "Pain and regret sit at the center.",
+    "The voice feels desperate but honest.",
+    "The mood is heavy and emotional.",
+    "The plea for help is unmistakable."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Need a favor
+import React, { useState } from "react";
+
+export default function NeedAFavor() {
+  const [lyrics] = useState([
+    "The song sounds like a confession.",
+    "Faith and failure clash together.",
+    "The tone is pleading and direct.",
+    "The emotion feels intense.",
+    "The track wrestles with guilt and hope."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Son of a sinner
+import React, { useState } from "react";
+
+export default function SonOfASinner() {
+  const [lyrics] = useState([
+    "The song balances guilt and redemption.",
+    "The narrator feels stuck between two paths.",
+    "The mood is reflective and country-leaning.",
+    "There is regret, but also honesty.",
+    "The track asks for grace."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+I am not okay
+import React, { useState } from "react";
+
+export default function IAmNotOkay() {
+  const [lyrics] = useState([
+    "The title says the feeling clearly.",
+    "The song leans into emotional honesty.",
+    "The mood is vulnerable and direct.",
+    "The struggle is spoken out loud.",
+    "The track does not hide pain."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Liar
+import React, { useState } from "react";
+
+export default function Liar() {
+  const [lyrics] = useState([
+    "The song confronts deception head-on.",
+    "The mood is tense and personal.",
+    "Trust has clearly been broken.",
+    "The tone is sharp and emotional.",
+    "The truth finally gets spoken."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Wild ones
+import React, { useState } from "react";
+
+export default function WildOnes() {
+  const [lyrics] = useState([
+    "The song feels free and unrestrained.",
+    "The energy is big and adventurous.",
+    "The mood is cinematic and open.",
+    "The track celebrates living loud.",
+    "Everything feels larger than life."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Javascript
+const jellyRollSongs = {
+  saveMe: [
+    "The song is raw and exposed.",
+    "Pain and regret sit at the center.",
+    "The voice feels desperate but honest.",
+    "The mood is heavy and emotional.",
+    "The plea for help is unmistakable."
+  ],
+  needAFavor: [
+    "The song sounds like a confession.",
+    "Faith and failure clash together.",
+    "The tone is pleading and direct.",
+    "The emotion feels intense.",
+    "The track wrestles with guilt and hope."
+  ],
+  sonOfASinner: [
+    "The song balances guilt and redemption.",
+    "The narrator feels stuck between two paths.",
+    "The mood is reflective and country-leaning.",
+    "There is regret, but also honesty.",
+    "The track asks for grace."
+  ]
+};
+
