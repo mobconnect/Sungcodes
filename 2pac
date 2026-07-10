@@ -1,0 +1,169 @@
+dear mama
+function dearMamaTheme() {
+  console.log("A son looks back with gratitude.");
+  console.log("The story is personal and honest.");
+  console.log("Pain and love exist at the same time.");
+  console.log("The message honors a mother’s sacrifice.");
+}
+
+california love
+function californiaLoveTheme() {
+  console.log("The energy is bright and celebratory.");
+  console.log("The vibe is all about West Coast pride.");
+  console.log("The beat feels like a party.");
+  console.log("Everything moves with confidence.");
+}
+
+changes
+function changesTheme() {
+  console.log("The song focuses on inequality and struggle.");
+  console.log("It reflects on life in the streets.");
+  console.log("The tone is thoughtful and urgent.");
+  console.log("The message asks for change and hope.");
+}
+
+keep ya head up
+function keepYaHeadUpTheme() {
+  console.log("The song speaks to resilience and respect.");
+  console.log("It supports women facing hardship.");
+  console.log("The tone is caring but direct.");
+  console.log("The message is to stay strong.");
+}
+
+i aint mad at cha
+function iAintMadAtChaTheme() {
+  console.log("The song reflects on friendship changing over time.");
+  console.log("The mood is calm and reflective.");
+  console.log("It accepts distance without bitterness.");
+  console.log("The tone is mature and forgiving.");
+}
+
+python
+def dear_mama_theme():
+    print("A son looks back with gratitude.")
+    print("The story is personal and honest.")
+    print("Pain and love exist at the same time.")
+    print("The message honors a mother’s sacrifice.")
+
+def california_love_theme():
+    print("The energy is bright and celebratory.")
+    print("The vibe is all about West Coast pride.")
+    print("The beat feels like a party.")
+    print("Everything moves with confidence.")
+
+def changes_theme():
+    print("The song focuses on inequality and struggle.")
+    print("It reflects on life in the streets.")
+    print("The tone is thoughtful and urgent.")
+    print("The message asks for change and hope.")
+
+def keep_ya_head_up_theme():
+    print("The song speaks to resilience and respect.")
+    print("It supports women facing hardship.")
+    print("The tone is caring but direct.")
+    print("The message is to stay strong.")
+
+def i_aint_mad_at_cha_theme():
+    print("The song reflects on friendship changing over time.")
+    print("The mood is calm and reflective.")
+    print("It accepts distance without bitterness.")
+    print("The tone is mature and forgiving.")
+
+hit em up
+function hitEmUpTheme() {
+  console.log("The tone is confrontational.");
+  console.log("The energy is raw and direct.");
+  console.log("The song is built around conflict.");
+  console.log("Every line lands like a challenge.");
+}
+
+Hail mary
+function hailMaryTheme() {
+  console.log("The mood is dark and intense.");
+  console.log("The verses feel heavy and spiritual.");
+  console.log("The atmosphere is tense.");
+  console.log("The track moves like a warning.");
+}
+
+me against the world
+function meAgainstTheWorldTheme() {
+  console.log("The song feels lonely and determined.");
+  console.log("Pressure turns into reflection.");
+  console.log("The message is about survival.");
+  console.log("The struggle feels personal.");
+}
+
+Ambitionz az a Ridah
+function ambitionzTheme() {
+  console.log("The sound is fearless and aggressive.");
+  console.log("The attitude is unstoppable.");
+  console.log("The track is about drive and power.");
+  console.log("The message is to keep moving forward.");
+}
+
+How do u want it 
+function howDoUWantItTheme() {
+  console.log("The vibe is playful and confident.");
+  console.log("The song mixes romance and celebration.");
+  console.log("The energy stays smooth.");
+  console.log("The hook is built for the crowd.");
+}
+
+Do for love
+function doForLoveTheme() {
+  console.log("The song is emotional and reflective.");
+  console.log("It talks about love and regret.");
+  console.log("The mood is softer than many 2Pac tracks.");
+  console.log("The message is honest and human.");
+}
+
+so many tears
+function soManyTearsTheme() {
+  console.log("The song is filled with pain.");
+  console.log("The reflection is deep and serious.");
+  console.log("Loss and stress shape the mood.");
+  console.log("The track feels vulnerable.");
+}
+
+Python
+def hit_em_up_theme():
+    print("The tone is confrontational.")
+    print("The energy is raw and direct.")
+    print("The song is built around conflict.")
+    print("Every line lands like a challenge.")
+
+def hail_mary_theme():
+    print("The mood is dark and intense.")
+    print("The verses feel heavy and spiritual.")
+    print("The atmosphere is tense.")
+    print("The track moves like a warning.")
+
+def me_against_the_world_theme():
+    print("The song feels lonely and determined.")
+    print("Pressure turns into reflection.")
+    print("The message is about survival.")
+    print("The struggle feels personal.")
+
+def ambitionz_theme():
+    print("The sound is fearless and aggressive.")
+    print("The attitude is unstoppable.")
+    print("The track is about drive and power.")
+    print("The message is to keep moving forward.")
+
+Javascript
+AllEyezonMe
+function allEyezOnMeTheme() {
+  console.log("The spotlight is intense.");
+  console.log("Confidence and tension fill the room.");
+  console.log("The vibe is bold and unstoppable.");
+  console.log("Every move feels watched.");
+}
+
+React
+def all_eyez_on_me_theme():
+    print("The spotlight is intense.")
+    print("Confidence and tension fill the room.")
+    print("The vibe is bold and unstoppable.")
+    print("Every move feels watched.")
+
+
