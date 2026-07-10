@@ -1,0 +1,241 @@
+super bass
+import React, { useState } from "react";
+
+export default function SuperBass() {
+  const [lyrics] = useState([
+    "The energy is playful and loud.",
+    "Confidence drives every line.",
+    "The rhythm stays bright and catchy.",
+    "The mood is fun and bold.",
+    "The whole track feels larger than life."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+starships
+import React, { useState } from "react";
+
+export default function Starships() {
+  const [lyrics] = useState([
+    "The vibe is built for the dance floor.",
+    "Freedom and fun lead the song.",
+    "The energy keeps rising.",
+    "Everything feels flashy and carefree.",
+    "The chorus pushes toward the sky."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Moment for life
+import React, { useState } from "react";
+
+export default function Moment4Life() {
+  const [lyrics] = useState([
+    "Success feels earned and unforgettable.",
+    "The moment is bigger than the past.",
+    "The mood is celebratory and reflective.",
+    "Gratitude sits next to ambition.",
+    "The song captures a once-in-a-lifetime win."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Anaconda
+import React, { useState } from "react";
+
+export default function Anaconda() {
+  const [lyrics] = useState([
+    "The track is bold and provocative.",
+    "Confidence is the whole point.",
+    "The energy is playful and over-the-top.",
+    "The beat leans hard into attitude.",
+    "The song owns its spotlight."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+chun-Li
+import React, { useState } from "react";
+
+export default function ChunLi() {
+  const [lyrics] = useState([
+    "The song is sharp and competitive.",
+    "The narrator pushes back against critics.",
+    "The mood is icy and powerful.",
+    "Every line sounds like a flex.",
+    "The energy stays fierce."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+FEFE
+import React, { useState } from "react";
+
+export default function FEFE() {
+  const [lyrics] = useState([
+    "The track feels playful and jumpy.",
+    "The rhythm is catchy and fast-moving.",
+    "The mood is flashy and carefree.",
+    "The collaboration gives it extra energy.",
+    "The song is built for replay."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+java script
+const nickiSongs = {
+  anaconda: [
+    "The track is bold and provocative.",
+    "Confidence is the whole point.",
+    "The energy is playful and over-the-top.",
+    "The beat leans hard into attitude.",
+    "The song owns its spotlight."
+  ],
+  chunLi: [
+    "The song is sharp and competitive.",
+    "The narrator pushes back against critics.",
+    "The mood is icy and powerful.",
+    "Every line sounds like a flex.",
+    "The energy stays fierce."
+  ],
+  fefe: [
+    "The track feels playful and jumpy.",
+    "The rhythm is catchy and fast-moving.",
+    "The mood is flashy and carefree.",
+    "The collaboration gives it extra energy.",
+    "The song is built for replay."
+  ]
+};
+
+Pound the alarm
+import React, { useState } from "react";
+
+export default function PoundTheAlarm() {
+  const [lines] = useState([
+    "The night starts loud and bright.",
+    "The energy keeps climbing.",
+    "The beat is made for the dance floor.",
+    "Confidence and celebration lead the way.",
+    "Everything pushes toward the drop."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+java script
+const poundTheAlarm = [
+  "The night starts loud and bright.",
+  "The energy keeps climbing.",
+  "The beat is made for the dance floor.",
+  "Confidence and celebration lead the way.",
+  "Everything pushes toward the drop."
+];
+
+Beez in the trap
+import React, { useState } from "react";
+
+export default function BeezInTheTrap() {
+  const [lyrics] = useState([
+    "The attitude is sharp and unapologetic.",
+    "The energy is streetwise and confident.",
+    "The hook hits hard and repeats with force.",
+    "The mood is flashy and aggressive.",
+    "The track is built on swagger."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Super Freaky Girl
+import React, { useState } from "react";
+
+export default function SuperFreakyGirl() {
+  const [lyrics] = useState([
+    "The track is playful and provocative.",
+    "Confidence stays at the center.",
+    "The energy is bold and high-gloss.",
+    "The vibe mixes humor with desire.",
+    "The song leans into fun and flash."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Java script version
+const nickiSongs = {
+  beezInTheTrap: [
+    "The attitude is sharp and unapologetic.",
+    "The energy is streetwise and confident.",
+    "The hook hits hard and repeats with force.",
+    "The mood is flashy and aggressive.",
+    "The track is built on swagger."
+  ],
+  superFreakyGirl: [
+    "The track is playful and provocative.",
+    "Confidence stays at the center.",
+    "The energy is bold and high-gloss.",
+    "The vibe mixes humor with desire.",
+    "The song leans into fun and flash."
+  ]
+};
+
