@@ -1,0 +1,241 @@
+Diamonds are a girls beat friend 
+import React, { useState } from "react";
+
+export default function DiamondsAreAGirlsBestFriend() {
+  const [lyrics] = useState([
+    "The song sparkles with glamour.",
+    "The mood is playful and polished.",
+    "Wealth and style sit at the center.",
+    "The vibe is classic Hollywood.",
+    "The energy feels iconic."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+I wanna be loved by you
+import React, { useState } from "react";
+
+export default function IWannaBeLovedByYou() {
+  const [lyrics] = useState([
+    "The song feels sweet and flirty.",
+    "The mood is light and nostalgic.",
+    "It leans into charm and romance.",
+    "The tone is playful and affectionate.",
+    "The track feels timeless."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+My heart belongs to daddy
+import React, { useState } from "react";
+
+export default function MyHeartBelongsToDaddy() {
+  const [lyrics] = useState([
+    "The tone is cheeky and teasing.",
+    "The mood is old-school and glamorous.",
+    "The performance feels confident.",
+    "The song mixes humor with style.",
+    "The vibe is unmistakably vintage."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Happy Birthday MR.President
+import React, { useState } from "react";
+
+export default function HappyBirthdayMrPresident() {
+  const [lyrics] = useState([
+    "The song feels intimate and famous.",
+    "The mood is soft and iconic.",
+    "It carries a sense of occasion.",
+    "The tone is delicate and memorable.",
+    "The performance became a pop-culture moment."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+The River of no return
+import React, { useState } from "react";
+
+export default function TheRiverOfNoReturn() {
+  const [lyrics] = useState([
+    "The song feels dramatic and wide open.",
+    "The mood is cinematic.",
+    "The imagery suggests danger and motion.",
+    "The tone is haunting but beautiful.",
+    "The track has a classic film feel."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Bye Bye Baby
+import React, { useState } from "react";
+
+export default function ByeByeBaby() {
+  const [lyrics] = useState([
+    "The song is bold and breezy.",
+    "The mood is playful and confident.",
+    "Goodbye feels stylish instead of sad.",
+    "The energy stays light.",
+    "The performance has a swing-era charm."
+  ]);
+
+  return (
+    <div>
+      {lyrics.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Javascript version
+const marilynMonroeSongs = {
+  diamondsAreAGirlsBestFriend: [
+    "The song sparkles with glamour.",
+    "The mood is playful and polished.",
+    "Wealth and style sit at the center.",
+    "The vibe is classic Hollywood.",
+    "The energy feels iconic."
+  ],
+  iWannaBeLovedByYou: [
+    "The song feels sweet and flirty.",
+    "The mood is light and nostalgic.",
+    "It leans into charm and romance.",
+    "The tone is playful and affectionate.",
+    "The track feels timeless."
+  ],
+  myHeartBelongsToDaddy: [
+    "The tone is cheeky and teasing.",
+    "The mood is old-school and glamorous.",
+    "The performance feels confident.",
+    "The song mixes humor with style.",
+    "The vibe is unmistakably vintage."
+  ]
+};
+
+Lazy
+import React, { useState } from "react";
+
+export default function Lazy() {
+  const [lines] = useState([
+    "The mood is relaxed and cheeky.",
+    "The performance feels playful and light.",
+    "The song leans into vintage charm.",
+    "The energy is smooth rather than urgent.",
+    "The whole thing feels delightfully laid-back."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Some like it hot
+import React, { useState } from "react";
+
+export default function SomeLikeItHot() {
+  const [lines] = useState([
+    "The song feels lively and flirtatious.",
+    "The vibe is classic and glamorous.",
+    "It carries a playful sense of mischief.",
+    "The mood is bright and swinging.",
+    "The performance feels instantly iconic."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Runnin'wild
+import React, { useState } from "react";
+
+export default function RunninWild() {
+  const [lines] = useState([
+    "The energy is bold and free.",
+    "The song moves with a carefree swagger.",
+    "The mood feels cheeky and stylish.",
+    "The performance has a smoky, classic feel.",
+    "The track sounds ready to take over the room."
+  ]);
+
+  return (
+    <div>
+      {lines.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
+}
+
+Javascript
+const marilynMonroeSongs = {
+  lazy: [
+    "The mood is relaxed and cheeky.",
+    "The performance feels playful and light.",
+    "The song leans into vintage charm.",
+    "The energy is smooth rather than urgent.",
+    "The whole thing feels delightfully laid-back."
+  ],
+  someLikeItHot: [
+    "The song feels lively and flirtatious.",
+    "The vibe is classic and glamorous.",
+    "It carries a playful sense of mischief.",
+    "The mood is bright and swinging.",
+    "The performance feels instantly iconic."
+  ],
+  runninWild: [
+    "The energy is bold and free.",
+    "The song moves with a carefree swagger.",
+    "The mood feels cheeky and stylish.",
+    "The performance has a smoky, classic feel.",
+    "The track sounds ready to take over the room."
+  ]
+};
+
+
+
