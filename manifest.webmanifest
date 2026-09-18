@@ -1,0 +1,10 @@
+{
+  "name": "Sungcodes — Music & Lyrics Studio",
+  "short_name": "Sungcodes",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf8",
+  "theme_color": "#24163e",
+  "description": "Discover music codes and create original song lyrics.",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

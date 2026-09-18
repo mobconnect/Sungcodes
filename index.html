@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24163e">
   <meta name="description" content="Sungcodes — discover music codes, contribute authorised lyrics, and create original song lyrics.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <title>Sungcodes | Music & Lyrics Studio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="hero">
-    <nav class="wrap nav"><a class="brand" href="./">Sungcodes</a><a href="https://github.com/mobconnect/Sungcodes" target="_blank" rel="noreferrer">Contribute on GitHub ↗</a></nav>
-    <div class="wrap hero-copy"><p class="eyebrow">Music-code library · lyrics studio</p><h1>Find a code.<br><em>Write something new.</em></h1><p>Explore artist collections, save your own authorised lyrics locally, and turn an idea into an original song draft.</p><div class="search"><span>⌕</span><input id="search" type="search" placeholder="Search artists or songs…"><kbd>/</kbd></div></div>
+    <nav class="wrap nav"><a class="brand" href="./">Sungcodes</a><div class="nav-actions"><button id="install" class="install" hidden>Install app</button><a href="https://github.com/mobconnect/Sungcodes" target="_blank" rel="noreferrer">Contribute on GitHub ↗</a></div></nav>
+    <div class="wrap hero-copy"><p class="eyebrow">Music-code library · lyrics studio</p><h1>Find a code.<br><em>Write something new.</em></h1><p>Explore artist collections, save your own authorised lyrics locally, and turn an idea into an original song draft.</p><div class="search"><span>⌕</span><input id="search" type="search" placeholder="Search artists or songs…" autocomplete="off"><kbd>/</kbd></div></div>
   </header>
   <main class="wrap main">
     <section class="notice" aria-labelledby="notice-title"><strong id="notice-title">Important copyright disclosure</strong><p>Sungcodes may reference songs, artists, lyrics and music-code material. Names and third-party works belong to their respective owners. Do not upload or share lyrics, translations, recordings or code unless you created them or have permission or a valid legal basis. This platform does not grant permission, host audio, or claim ownership of third-party material.</p><p>Generated lyrics are intended to be <strong>new and original</strong>. Do not ask the generator to imitate a living artist or reproduce an existing song.</p></section>
@@ -19,7 +22,7 @@
     <section class="contribute"><div><p class="eyebrow">Contribute responsibly</p><h2>Have an authorised code or lyric?</h2><p>Add original work or material you are authorised to publish through a pull request. Submissions may be removed if rights cannot be verified.</p></div><a class="button" href="https://github.com/mobconnect/Sungcodes" target="_blank" rel="noreferrer">View repository ↗</a></section>
     <details class="disclaimer"><summary>Full disclaimer and terms notice</summary><p>Sungcodes is a community discovery and creative-writing tool provided “as is”. It is not a lyrics-licensing service, music publisher, legal adviser, or rights-management service. You are solely responsible for anything you upload, publish, download, or share, including obtaining permissions and complying with copyright, moral-rights, privacy and platform rules. Do not upload personal information or confidential material. We do not guarantee that generated text is unique, error-free, or suitable for publication; review it for accidental similarity before release.</p><p>By contributing content, you confirm that you have the rights or permissions needed to do so and grant the repository owner permission to display it under the repository’s applicable licence. If you believe material infringes your rights, contact the repository owner through GitHub with the relevant URL and evidence.</p></details>
   </main>
-  <footer class="wrap footer"><span>Sungcodes</span><span>© 2026 Jessica Bright · <a href="https://justbeyou.com.au" target="_blank" rel="noreferrer">justbeyou.com.au</a> · <a href="TERMS.md">Disclosure</a></span></footer>
+  <footer class="wrap footer"><span>Sungcodes</span><span>© 2026 Jessica Bright · <a href="https://justbeyou.com.au" target="_blank" rel="noreferrer">justbeyou.com.au</a> · <a href="TERMS.md">Disclosure</a> · <a href="PRIVACY.md">Privacy</a></span></footer>
   <script type="module" src="app.js"></script>
 </body>
 </html>
