@@ -1,1 +1,22 @@
-[{"artist":"Example Artist","title":"Example Song","genre":"acoustic","mood":"hopeful","tempo":104,"rights":"authorised","url":"https://github.com/mobconnect/Sungcodes/blob/main/example/song.txt"},{"artist":"Sungcodes Studio","title":"Small Sparks","genre":"acoustic","mood":"hopeful","tempo":104,"rights":"original","url":"https://github.com/mobconnect/Sungcodes/blob/main/Golden/Small%20Sparks"}]
+[
+  {
+    "title": "Midnight Windows",
+    "artist": "Original community work",
+    "genre": "indie",
+    "mood": "reflective",
+    "tempo": 96,
+    "rights": "original",
+    "description": "A quiet song about finding direction after a difficult season.",
+    "lyrics": "[Verse]\nStreetlights draw a map across the night\nSmall sparks gather, turning dark to bright\n\n[Chorus]\nI find a window in the midnight glow\nAnd take one more brave step to go"
+  },
+  {
+    "title": "Small Sparks",
+    "artist": "Sungcodes Studio",
+    "genre": "acoustic",
+    "mood": "hopeful",
+    "tempo": 104,
+    "rights": "original",
+    "description": "An uplifting draft about rebuilding confidence.",
+    "lyrics": "[Verse]\nI keep the lessons, leave the weight behind\nMake a little room for what I find\n\n[Chorus]\nSmall sparks are enough to start a fire\nOne true note can lift me higher"
+  }
+]

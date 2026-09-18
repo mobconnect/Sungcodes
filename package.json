@@ -1,4 +1,16 @@
 {
-  "scripts": {"lint": "eslint .", "test": "node --test"},
-  "devDependencies": {"eslint": "^9.0.0"}
+  "name": "sungcodes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "eslint app.js enhancements.js",
+    "test": "node --test",
+    "build-check": "node scripts/build-check.mjs",
+    "format:check": "prettier --check index.html styles.css app.js enhancements.js sw.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  }
 }
