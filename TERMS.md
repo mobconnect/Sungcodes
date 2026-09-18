@@ -1,17 +1,9 @@
 # Sungcodes disclosure and disclaimer
 
-Sungcodes may reference songs, artists, lyrics, translations, music codes and other third-party material. Names and works belong to their respective copyright and trademark owners. Sungcodes does not claim ownership of third-party content, provide a lyrics licence, host recordings, or grant permission to reproduce protected works.
+Sungcodes may reference songs, artists, lyrics, translations, music codes and other third-party material. Names and works belong to their owners. Sungcodes does not provide a lyrics licence or legal advice.
 
-## Contributions
+Only submit original or authorised material. Do not submit complete copyrighted lyrics unless you have permission or a valid legal basis. To report suspected infringement, open a GitHub Issue at https://github.com/mobconnect/Sungcodes/issues and include the relevant URL and evidence. Do not include private personal information.
 
-Only submit lyrics, code, translations or other material that you created or are authorised to publish, or that is otherwise permitted by law. Do not submit complete copyrighted lyrics merely because they are publicly available elsewhere. Contributors are responsible for permissions, attribution and takedown compliance. The repository licence applies only to material the contributor has the right to license; it does not override third-party rights.
-
-## Original lyrics studio
-
-The web app includes a browser-only creative writing tool that generates song-lyric drafts from user prompts. Its output is intended to be original, but no uniqueness or non-infringement guarantee is made. Users must review output before publishing and must not request or use text that imitates a living artist, reproduces an existing song, or incorporates lyrics they do not have permission to use. The tool does not call an external AI service or send prompt text to a server.
-
-## General disclaimer
-
-Sungcodes is provided “as is” for discovery and creative purposes. It is not legal advice, a copyright clearance service, a music publisher, or a substitute for professional rights advice. Users are solely responsible for material they create, upload, download, or share. If you believe content infringes your rights, report the relevant repository URL to the project owner through GitHub so it can be reviewed.
+The original-lyrics studio runs in the browser. Generated text is not guaranteed unique or non-infringing; review it before publication and do not imitate living artists or reproduce existing songs.
 
 Business: Jessica Bright · ABN 59 726 146 692 · https://justbeyou.com.au

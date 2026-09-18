@@ -1,0 +1,4 @@
+{
+  "scripts": {"lint": "eslint .", "test": "node --test"},
+  "devDependencies": {"eslint": "^9.0.0"}
+}

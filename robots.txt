@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mobconnect.github.io/Sungcodes/sitemap.xml
